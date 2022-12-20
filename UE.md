@@ -46,6 +46,8 @@ Unreal expects classes to be prefixed consistently.
 
 - To start with a Character we created in a level, set its `Auto Possess Player` to `Player0`.
 
+### Camera and Arm
+
 - The camera attaching to the player Character and the arm that can be used to link between the player Character and the camera (to make a 3rd-person view) can be represented as `protected` data members (in the player Character class) of type `UCameraComponent` and `USpringArmComponent` respectively.
 
 - A nice property of `USpringArmComponent` is that collision detection is applied to automatically adjust the length of the arm so that there's never obstacles in between what are linked by the spring arm.
@@ -58,4 +60,14 @@ Unreal expects classes to be prefixed consistently.
 
   For example, `UPROPERTY(VisibleAnywhere)`, where `VisibleAnywhere` is a specifier, exposes the component follows it to unreal editor & Blueprints.
 
+### Bind key (input) to function
 
+- In a Character class there is a method called `void SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)` which is used to bind functions to inputs (e.g. key press).
+
+  - To bind key for character movement: inside the function, we can call the `UInputComponent`'s method `BindAxis()`. For example, `PlayerInputComponent->BindAxis("MoveForward", this, &ASCharacter::MoveForward)`. `"MoveForward"` is the name to refer to when we actually do the key binding in the editor, `this` is the point to the object which <ins>owns this input</ins>, `&ASCharacter::MoveForward` is the pointer to the function that should be called when receiving this input.
+  
+    The movement method `&ASCharacter::MoveForward` required by the `BindAxis()` method takes one `float` (let's name it `value`). To implement `&ASCharacter::MoveForward`, since our class is a Character, we are able to call the `AddMovementInput(GetActorForwardVector(), value)` method (which does what it says) inside `&ASCharacter::MoveForward`.
+    
+    To actually do the key binding in the editor, go to `Edit` -> `Project Settings` -> `Engine` -> `Input` -> `Bindings` -> `Axis Mappings`. Enter the name `"MoveForward"` we pass to the `BindAxis()` method earlier. Then, choose the input to bind with, and the `Scale` value we entered to its right is the `float` passed as `value` in `&ASCharacter::MoveForward` method. Note that we can bind multiple inputs to the same function (and perhaps each given a different `value`).
+    
+  - To bind key for Yaw movement, we can instead call `PlayerInputComponent->BindAxis("Turn", this, &APawn::AddControllerYawInput);` in `ASCharacter::SetupPlayerInputComponent` method. Then, go to `Edit - Project Setting - Engine - Input - Bindings - Axis Mappings`, add a new mapping and name it as `"Turn"` (as in `BindAxis("Turn", ...`) and assign it to `Mouse X` (this represents the Left-Right movement of your mouse).
