@@ -71,3 +71,7 @@ Unreal expects classes to be prefixed consistently.
     To actually do the key binding in the editor, go to `Edit` -> `Project Settings` -> `Engine` -> `Input` -> `Bindings` -> `Axis Mappings`. Enter the name `"MoveForward"` we pass to the `BindAxis()` method earlier. Then, choose the input to bind with, and the `Scale` value we entered to its right is the `float` passed as `value` in `&ASCharacter::MoveForward` method. Note that we can bind multiple inputs to the same function (and perhaps each given a different `value`).
     
   - To bind key for Yaw movement, we can instead call `PlayerInputComponent->BindAxis("Turn", this, &APawn::AddControllerYawInput);` in `ASCharacter::SetupPlayerInputComponent` method. Then, go to `Edit - Project Setting - Engine - Input - Bindings - Axis Mappings`, add a new mapping and name it as `"Turn"` (as in `BindAxis("Turn", ...`) and assign it to `Mouse X` (this represents the Left-Right movement of your mouse).
+
+### Character animation
+
+- Inside your Character Blueprint class (Open with Full Blueprint Editor), the *Details* of the *Mesh* component has a section called *Mesh* where <ins>Skeletal Mesh Asset</ins> can be selected (the asset files should be copied to the <ins>Content</ins> folder under the project menu). Plus, we can select an <ins>Anim Class</ins> in the section called *Animation* for our Character.
