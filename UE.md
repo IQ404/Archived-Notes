@@ -32,6 +32,8 @@ Notes:
 
 - Classes derived from `Actor` has a method `BeginPlay()` which is called whenever the actor is spawned.
 
+## Character
+
 - To start with a Character we created in a level, set its `Auto Possess Player` to `Player0`.
 
 - The camera attaching to the player Character and the arm that can be used to link between the player Character and the camera (to make a 3rd-person view) can be represented as `protected` data members (in the player Character class) of type `UCameraComponent` and `USpringArmComponent` respectively.
