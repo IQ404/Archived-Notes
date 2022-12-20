@@ -32,6 +32,16 @@ Notes:
 
 - Classes derived from `Actor` has a method `BeginPlay()` which is called whenever the actor is spawned.
 
+## Class Prefixes
+
+Unreal expects classes to be prefixed consistently.
+
+- U - Classes directly deriving from UObject
+- A - Classes directly deriving from Actor
+- F - Structs
+- E - Enums
+- I - Interfaces
+
 ## Character
 
 - To start with a Character we created in a level, set its `Auto Possess Player` to `Player0`.
@@ -48,12 +58,4 @@ Notes:
 
   For example, `UPROPERTY(VisibleAnywhere)`, where `VisibleAnywhere` is a specifier, exposes the component follows it to unreal editor & Blueprints.
 
-## Class Prefixes
 
-Unreal expects classes to be prefixed consistently.
-
-- U - Classes directly deriving from UObject
-- A - Classes directly deriving from Actor
-- F - Structs
-- E - Enums
-- I - Interfaces
