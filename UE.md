@@ -1,6 +1,6 @@
 ## Class Hierarchy in Unreal
 
-- Object // base class for all object in Unreal
+- Object - base class for all object in Unreal
 
 e.g. Camera
 
