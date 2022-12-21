@@ -74,4 +74,4 @@ Unreal expects classes to be prefixed consistently.
 
 ### Character animation
 
-- Inside your Character Blueprint class (Open with Full Blueprint Editor), the *Details* of the *Mesh* component has a section called *Mesh* where <ins>Skeletal Mesh Asset</ins> can be selected (the asset files should be copied to the <ins>Content</ins> folder under the project menu). Plus, we can select an <ins>Anim Class</ins> in the section called *Animation* for our Character.
+- Inside your Character Blueprint class (Open with Full Blueprint Editor), the *Details* of the *Mesh* component has a section called *Mesh* where <ins>Skeletal Mesh Asset</ins> can be selected (the asset files should be copied to the <ins>Content</ins> folder under the project menu). Plus, we can select an <ins>Anim Class</ins> in the section called *Animation* for our the Skeletal Mesh Asset.
