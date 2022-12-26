@@ -55,6 +55,15 @@
 
   - $\vec a \cdot \vec b = \vec b \cdot \vec a$
   - $\vec a \cdot (\vec b + \vec c) = \vec a \cdot \vec b + \vec a \cdot \vec c$
-  - $(k \vec a) \cdot \vec b = \vec a \cdot (k \vec b) = k (\vec a \cdot \ vec b)$
+  - $(k \vec a) \cdot \vec b = \vec a \cdot (k \vec b) = k (\vec a \cdot \vec b)$ where $k$ is a scalar.
+
+- In <ins>Cartesian</ins> coordinates, dot product satisfies:
+
+$$
+\begin{pmatrix}
+x \\
+y \\
+\end{pmatrix}
+$$
 
 ---
