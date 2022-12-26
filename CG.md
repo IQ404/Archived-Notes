@@ -77,8 +77,8 @@ $$
 
 - 点乘可以帮助我们任意地对一个向量做垂直与平行的分解：
 
-  Let ${\vec b_{\bot a}}$ be the projection (vector) of $\vec b$ on $\vec a$.
+  Let ${\vec b_{\bot a}}$ be the projection (vector) of $\vec b$ on $\vec a$. Then:
   
-  
+  ${\vec b_{\bot a}} = k \hat a$
 
 ---
