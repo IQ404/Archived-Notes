@@ -42,6 +42,6 @@
 - Dot (Scalar) Product:
 
   - $\vec a \dot \vec b = \left\lVert \veca \right\rVert \left\lVert \vecb \right\rVert cos\theta$
-  - $\left\lVert \vec a \right\rVert \left\lVert \vec b \right\rVert cos\theta$
+  - $\left\lVert \vec a \right\rVert \left\lVert \vec b \right\rVert \cos\theta$
 
 ---
