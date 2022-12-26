@@ -91,7 +91,11 @@ $$
 
 - Cross product (denoted by the operator $\times$), when taking in two vectors in 3D, say, $a$ and $b$ (note that this order matters), returns another 3D vector, say $c$, that is <ins>orthogonal</ins> to both $a$ and $b$, with the direction of $c$ determined by right-hand rule starting from $a$ towards $b$.
 
-- The magnitude of a cross product is as follows: $$\left\lVert \vec a \times \vec b \right\rVert = \left\lVert \vec a \right\rVert \left\lVert \vec b \right\rVert \sin \theta$$
+- The magnitude of a cross product is as follows:
+  
+  $$\left\lVert \vec a \times \vec b \right\rVert = \left\lVert \vec a \right\rVert \left\lVert \vec b \right\rVert \sin \theta$$
+  
+  where $\theta$ is between $0^o$ and $180^o$.
 
 - Properties of cross product:
 
