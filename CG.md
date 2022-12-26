@@ -75,11 +75,18 @@ z_b \\
 = x_a x_b + y_a y_b + z_a z_b
 $$
 
-- 点乘可以帮助我们任意地对一个向量做垂直与平行的分解：
-
+- 点乘可以帮助我们任意地对一个向量做（相对于另一个向量的）垂直与平行的分解：
+  
   Let ${\vec b_{\bot a}}$ be the projection (vector) of $\vec b$ on $\vec a$. Then:
   
   ${\vec b_{\bot a}} = k \hat a$ where we can see that $k = \left\lVert {\vec b_{\bot a}} \right\rVert = \left\lVert \vec b \right\rVert \cos \theta = \hat a \cdot \vec b$
-
+  
   另一方向分量为 $\vec b - \vec b_{\bot a}$
+  
+- 点乘的结果还可以告诉我们两个向量的方向有多<ins>接近<ins>。
+
+- 
+
+
+
 ---
