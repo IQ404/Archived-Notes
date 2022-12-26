@@ -125,13 +125,12 @@ $$
 \begin{pmatrix}
 0 & -z_a & y_a \\
 z_a & 0 & -x_a \\
--y_a & x_a & 0 \\
+-y_a & x_a & 0
 \end{pmatrix}
-
 \begin{pmatrix}
 x_b \\
 y_b \\
-z_b \\
+z_b
 \end{pmatrix}
 $$
 
