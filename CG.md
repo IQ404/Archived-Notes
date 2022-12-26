@@ -41,10 +41,20 @@
 
 - Dot (Scalar) Product:
 
+  - Operating on vectors, resulting in scalar.
+
+  - 点乘可以快速得到两个向量的夹角。
+
   - $\vec a \cdot \vec b = \left\lVert \vec a \right\rVert \left\lVert \vec b \right\rVert \cos\theta$
     
     And thus, for unit vectors: $\cos\theta = \hat a \cdot \hat b$
     
   - $\cos\theta = \frac{\vec a \cdot \vec b}{\left\lVert \vec a \right\rVert \left\lVert \vec b \right\rVert}$
+
+- 点乘满足：
+
+  - $\vec a \cdot \vec b = \vec b \cdot \vec a$
+  - $\vec a \cdot (\vec b + \vec c) = \vec a \cdot \vec b + \vec a \cdot \vec c$
+  - $$
 
 ---
