@@ -27,6 +27,16 @@
 
 ---
 
-- 
+- 计算机图形学依赖于：
+
+  - Math: Linear Algebra, Calculus, Statistics.
+  - Physics: Optics, Mechanics.
+  - Others: Signal Processing, Numerical Analysis.
+
+- Vector does not hold information about its absolute starting position.
+
+- Cartesian Coordinates 即 直角坐标系。
+
+- 在图形学中，向量默认为$n/times 1$矩阵
 
 ---
