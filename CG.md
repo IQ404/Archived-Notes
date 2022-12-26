@@ -97,7 +97,7 @@ $$
 
 $$\vec a \times \vec b = - \vec b \times \vec a$$
 
-$$\vec a \times \vec a = \vec 0$$
+$$\vec a \times \vec a = \vec 0$$ (note that )
 
 $$\vec a \times (\vec b + \vec c) = \vec a \times \vec b + \vec a \times \vec c$$
 
