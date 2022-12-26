@@ -105,4 +105,29 @@ $$k(\vec a \times \vec b) = (k \vec a) \times \vec b = \vec a \times (k \vec b)$
 
 - 如果在一个 Cartesian Coordinates 里 $\vec x \times \vec y = \vec z$, 那么我们就说这个坐标系是一个<ins>右手坐标系</ins>。 反之若$\vec x \times \vec y = - \vec z$，则该坐标系为<ins>左手坐标系</ins>。
 
+- Algebraically:
+
+$$
+\vec a \times \vec b =
+\begin{pmatrix}
+y_a z_b - y_b z_a \\
+z_a x_b - x_a z_b \\
+x_a y_b - y_a x_b
+\end{pmatrix}
+=
+A^* b =
+\begin{pmatrix}
+0 & -z_a & y_a \\
+z_a & 0 & -x_a \\
+-y_a & x_a & 0 \\
+\end{pmatrix}
+\begin{pmatrix}
+x_b \\
+y_b \\
+z_b \\
+\end{pmatrix}
+$$
+
+- 
+
 ---
