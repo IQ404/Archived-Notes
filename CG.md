@@ -91,9 +91,17 @@ $$
 
 - Cross product (denoted by the operator $\times$), when taking in two vectors in 3D, say, $a$ and $b$ (note that this order matters), returns another 3D vector, say $c$, that is <ins>orthogonal</ins> to both $a$ and $b$, with the direction of $c$ determined by right-hand rule starting from $a$ towards $b$.
 
-- Hence: $\vec a \times \vec b = - \vec b \times \vec a$
-
 - The magnitude of a cross product is as follows: $$\left\lVert \vec a \times \vec b \right\rVert = \left\lVert \vec a \right\rVert \left\lVert \vec b \right\rVert \sin \theta$$
+
+- Properties of cross product:
+
+$$\vec a \times \vec b = - \vec b \times \vec a$$
+
+$$\vec a \times \vec a = \vec 0$$
+
+$$\vec a \times (\vec b + \vec c) = \vec a \times \vec b + \vec a \times \vec c$$
+
+$$k(\vec a \times \vec b) = (k \vec a) \times \vec b = \vec a \times (k \vec b)$$
 
 - 如果在一个 Cartesian Coordinates 里 $\vec x \times \vec y = \vec z$, 那么我们就说这个坐标系是一个<ins>右手坐标系</ins>。 反之若$\vec x \times \vec y = - \vec z$，则该坐标系为<ins>左手坐标系</ins>。
 
