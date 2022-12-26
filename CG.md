@@ -77,6 +77,8 @@ $$
 
 - 点乘可以帮助我们任意地对一个向量做垂直与平行的分解：
 
-  ${\vec b_\bot}$
+  Let ${\vec b_{\bot a}}$ be the projection (vector) of $\vec b$ on $\vec a$.
+  
+  
 
 ---
