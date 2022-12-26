@@ -99,13 +99,15 @@ $$
 
 - Properties of cross product:
 
-$$\vec a \times \vec b = - \vec b \times \vec a$$
+  $$\vec a \times \vec b = - \vec b \times \vec a$$
 
-$$\vec a \times \vec a = \vec 0 \text{  (note that $\vec 0$ is the zero vector i.e. tuple of zeros, not the scalar $0$)}$$
+  $$\vec a \times \vec a = \vec 0$$
 
-$$\vec a \times (\vec b + \vec c) = \vec a \times \vec b + \vec a \times \vec c$$
+  (note that $\vec 0$ is the zero vector i.e. tuple of zeros, not the scalar $0$)
 
-$$k(\vec a \times \vec b) = (k \vec a) \times \vec b = \vec a \times (k \vec b)$$
+  $$\vec a \times (\vec b + \vec c) = \vec a \times \vec b + \vec a \times \vec c$$
+
+  $$k(\vec a \times \vec b) = (k \vec a) \times \vec b = \vec a \times (k \vec b)$$
 
 - 如果在一个 Cartesian Coordinates 里 $\vec x \times \vec y = \vec z$, 那么我们就说这个坐标系是一个<ins>右手坐标系</ins>。 反之若$\vec x \times \vec y = - \vec z$，则该坐标系为<ins>左手坐标系</ins>。
 
