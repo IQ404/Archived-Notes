@@ -108,9 +108,7 @@ $$k(\vec a \times \vec b) = (k \vec a) \times \vec b = \vec a \times (k \vec b)$
 - Algebraically:
 
 $$
-
 \vec a \times \vec b =
-
 $$
 
 
