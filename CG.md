@@ -79,6 +79,7 @@ $$
 
   Let ${\vec b_{\bot a}}$ be the projection (vector) of $\vec b$ on $\vec a$. Then:
   
-  ${\vec b_{\bot a}} = k \hat a$
+  ${\vec b_{\bot a}} = k \hat a$ where we can see that $k = \left\lVert {\vec b_{\bot a}} \right\rVert = \left\lVert \vec b \right\rVert \cos \theta = \hat a \cdot \vec b$
 
+  另一方向分量为 $\vec b - \vec b_{\bot a}$
 ---
