@@ -42,6 +42,9 @@
 - Dot (Scalar) Product:
 
   - $\vec a \cdot \vec b = \left\lVert \vec a \right\rVert \left\lVert \vec b \right\rVert \cos\theta$
+    
+    And thus, for unit vectors: $\cos\theta = \hat a \cdot \hat b$
+    
   - $\cos\theta = \frac{\vec a \cdot \vec b}{\left\lVert \vec a \right\rVert \left\lVert \vec b \right\rVert}$
 
 ---
