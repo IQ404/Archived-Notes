@@ -111,6 +111,8 @@ $$
 
 \vec a \times \vec b =
 
+$$
+
 \begin{pmatrix}
 y_a z_b - y_b z_a \\
 z_a x_b - x_a z_b \\
