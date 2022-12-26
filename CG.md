@@ -37,6 +37,6 @@
 
 - Cartesian Coordinates 即 直角坐标系。
 
-- 在图形学中，向量默认为$n/times 1$矩阵
+- 在图形学中，向量默认为$n \times 1$矩阵
 
 ---
