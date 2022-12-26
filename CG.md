@@ -39,4 +39,8 @@
 
 - 在图形学中，向量默认为 $n \times 1$ 矩阵（即 列向量）。
 
+- Dot (Scalar) Product:
+
+  - $\vec x$
+
 ---
