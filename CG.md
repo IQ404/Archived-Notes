@@ -60,10 +60,19 @@
 - In <ins>Cartesian</ins> coordinates, dot product satisfies:
 
 $$
+\vec a \cdot \vec b =
 \begin{pmatrix}
-x \\
-y \\
+x_a \\
+y_a \\
+z_a
 \end{pmatrix}
+\cdot
+\begin{pmatrix}
+x_b \\
+y_b \\
+z_b \\
+\end{pmatrix}
+= x_a x_b + y_a y_b + z_a z_b
 $$
 
 ---
