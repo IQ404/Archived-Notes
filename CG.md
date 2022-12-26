@@ -37,9 +37,9 @@
 
 - Cartesian Coordinates 即 直角坐标系。
 
-- 在图形学中，向量默认为 $n \times 1$ 矩阵（即 列向量）。
+- 在图形学中，向量默认为 $n \times 1$ 矩阵（即 列向量，即 矩阵作用在向量上时默认为左乘）。
 
-- Dot (Scalar) Product:
+## Dot (Scalar) Product:
 
   - Operating on vectors, resulting in scalar.
 
@@ -82,10 +82,18 @@ $$
   ${\vec b_{\bot a}} = k \hat a$ where we can see that $k = \left\lVert {\vec b_{\bot a}} \right\rVert = \left\lVert \vec b \right\rVert \cos \theta = \hat a \cdot \vec b$
   
   另一方向分量为 $\vec b - \vec b_{\bot a}$
-  
-- 点乘的结果还可以告诉我们两个向量的方向有多<ins>接近</ins>。
 
-- 点乘的结果还可以告诉我们两个向量的方向是否基本一致（点乘结果$>0$），是否基本相反（点乘结果$<0$），或相互垂直（点乘结果$=0$）。
+- 点乘的结果还可以告诉我们两个向量的方向是否基本一致（点乘结果 $>0$），是否基本相反（点乘结果 $<0$），或相互垂直（点乘结果 $=0$）。
+  
+- 点乘的结果还可以告诉我们两个单位向量的方向有多接近（即 它们之间夹角有多大）：方向越接近点乘结果越接近$1$，方向越相反点乘结果越接近$-1$。
+
+## Cross (Vector) Product
+
+- Cross product, when taking in two vectors in 3D, say, $a$ and $b$ (note that this order matters), returns another 3D vector, say $c$, that is <ins>orthogonal</ins> to both $a$ and $b$, with the direction of $c$ determined by right-hand rule starting from $a$ towards $b$.
+
+- Hence: $\vec a \times \vec b = - \vec b \times \vec a$
+
+- The magnitude of a cross product is as follows: $$\left\lVert \vec a \times \vec b \right\rVert = \left\lVert \vec a \right\rVert \left\lVert \vec b \right\rVert \sin \theta$$
 
 
 ---
