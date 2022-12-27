@@ -115,7 +115,7 @@ $$
 
 - Algebraically:
 
-$$
+  $$
 \vec a \times \vec b =
 \begin{pmatrix}
 y_a z_b - y_b z_a \\
@@ -134,6 +134,8 @@ y_b \\
 z_b
 \end{pmatrix}
 $$
+
+  其中 $A^* $ 称作 dual matrix。
 
 - 叉乘在图形学中的作用：
 
