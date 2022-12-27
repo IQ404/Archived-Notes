@@ -41,15 +41,17 @@
 
 ## Dot (Scalar) Product:
 
-  - Operating on vectors, resulting in scalar.
+- Operating on vectors, resulting in scalar.
 
-  - 点乘可以快速得到两个向量的夹角。
+- 点乘可以快速得到两个向量的夹角。
 
-  - $\vec a \cdot \vec b = \left\lVert \vec a \right\rVert \left\lVert \vec b \right\rVert \cos\theta$
+- $\vec a \cdot \vec b = \left\lVert \vec a \right\rVert \left\lVert \vec b \right\rVert \cos\theta$
     
-    And thus, for unit vectors: $\cos\theta = \hat a \cdot \hat b$
+  And thus, for unit vectors: $\cos\theta = \hat a \cdot \hat b$
     
-  - $\cos\theta = \frac{\vec a \cdot \vec b}{\left\lVert \vec a \right\rVert \left\lVert \vec b \right\rVert}$
+- $\cos\theta = \frac{\vec a \cdot \vec b}{\left\lVert \vec a \right\rVert \left\lVert \vec b \right\rVert}$
+
+- 若将向量定义为列向量且看作 $n \times 1$ 的矩阵，则点乘的矩阵表示如下：$$\vec a \cdot \vec b = {\vec a}^{T} \vec b$$
 
 - 点乘满足：
 
@@ -144,5 +146,21 @@ $$
   - 判断一个点是否在一三角形内部：
     
     设3D直角坐标系内有一三角形 $ABC$ 及一点 $P$。可见，若 $\vec{AB} \times \vec{AP}$, $\vec{BC} \times \vec{BP}$, $\vec{CA} \times \vec{CP}$ 三者符号相同，则 $P$ 点在三角形 $ABC$ 内部，反之则在其外部。值得注意的是，若 $P$ 点在三角形上（即 以上三者之一为 $0$ ），则可自行定义 $P$ 点是在三角形 $ABC$ 内部还是外部。
+
+## Matrices
+
+- The rule for matrices addition and multiplication of a matrix by a scalar: element by element.
+
+- Properties of matrices multiplication:
+
+  - $AB$ and $BA$ are different in general.
+  - $(AB)C=A(BC)$
+  - $A(B+C)=AB+AC$
+  - $(A+B)C=AC+BC$
+  - $AA^{-1}=A^{-1}A=I$
+  - $(AB)^{-1}=B^{-1}A^{-1}$
+  - $(AB)^{T}=B^{T}A^{T}$
+
+- 
 
 ---
