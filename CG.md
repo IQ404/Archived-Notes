@@ -185,6 +185,15 @@ $$
 x \\
 y
 \end{pmatrix}
+=
+\begin{pmatrix}
+a & 0 \\
+0 & b
+\end{pmatrix}
+\begin{pmatrix}
+x_0 \\
+y_0
+\end{pmatrix}
 $$
 
 ---
