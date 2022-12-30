@@ -284,6 +284,29 @@ t_y
 \end{pmatrix}
 $$
 
+- 仿射变换（Affine Transformation/Map）：
+
+$$
+\begin{pmatrix}
+x \\
+y
+\end{pmatrix} =
+\begin{pmatrix}
+a & b \\
+c & d
+\end{pmatrix}
+\begin{pmatrix}
+x_0 \\
+y_0
+\end{pmatrix} +
+\begin{pmatrix}
+t_x \\
+t_y
+\end{pmatrix}
+$$
+
+i.e. affine map $=$ linear map $+$ translation
+
 ## Homogeneous Coordinates（齐次坐标）
 
 In <ins>2D</ins>, define:
