@@ -418,6 +418,8 @@ w
 \end{pmatrix}
 $$
 
+<ins>Note</ins>: the last raw $(0 0 1)$ is only valid when representing affine map.
+
 For examples:
 
 - Scale:
