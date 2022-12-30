@@ -329,6 +329,9 @@ Further Define:
 
 Then, we can see that, in homogenous coordinates:
 
-- vector $+$ vector $\eq$ vector
+- vector $+$ vector $=$ vector
+- point $-$ point $=$ vector
+- point $+$ vector $=$ point
+- point $+$ point $=$ mid-point
 
 ---
