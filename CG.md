@@ -264,7 +264,7 @@ $$
 
   $$y=y_0+t_y$$
 
-  Since there is no matrix which can produce such transformation, <ins>translation is not linear transformation</ins>.
+  We can see that: there is no matrix which can produce such transformation $\iff$ <ins>translation is not linear transformation</ins>.
 
 - 
 
