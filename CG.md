@@ -375,4 +375,47 @@ Then, we can see that, in homogenous coordinates:
 - point $+$ vector $=$ point
 - point $+$ point $=$ mid-point
 
+<br>
+
+Any affine map:
+
+$$
+\begin{pmatrix}
+x \\
+y
+\end{pmatrix} =
+\begin{pmatrix}
+a & b \\
+c & d
+\end{pmatrix}
+\begin{pmatrix}
+x_0 \\
+y_0
+\end{pmatrix} +
+\begin{pmatrix}
+t_x \\
+t_y
+\end{pmatrix}
+$$
+
+can be written in homogenous coordinates:
+
+$$
+\begin{pmatrix}
+x \\
+y \\
+1
+\end{pmatrix} =
+\begin{pmatrix}
+a & b & t_x \\
+c & d & t_y \\
+0 & 0 & 1
+\end{pmatrix}
+\begin{pmatrix}
+x_0 \\
+y_0 \\
+1
+\end{pmatrix}
+$$
+
 ---
