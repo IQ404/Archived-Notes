@@ -229,4 +229,21 @@ y_0
 \end{pmatrix}
 $$
 
+- Rotation: (by default: <ins>WRT the origin $(0,0)$ counter-clockwise</ins>)
+
+$$
+\begin{pmatrix}
+x \\
+y
+\end{pmatrix} =
+\begin{pmatrix}
+1 & a \\
+0 & 1
+\end{pmatrix}
+\begin{pmatrix}
+x_0 \\
+y_0
+\end{pmatrix}
+$$
+
 ---
