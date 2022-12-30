@@ -181,7 +181,11 @@ $$
   $$\vec v = S_{a,b} \vec {v_0}$$
   
   $$
-  a
+  \begin{pmatrix}
+  x \\
+  y
+  \end{pmatrix}
+  
   $$
 
 ---
