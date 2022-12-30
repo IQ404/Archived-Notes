@@ -273,7 +273,7 @@ In <ins>2D</ins>, define:
 - point: $(x,y,1)^T$
 - vector: $(x,y,0)^T$
 
-Now, we can represent translation of 2D <ins>point</ins> under homogenous coordinates by:
+Now, we can represent translation of 2D <ins>point</ins> under homogenous coordinates by a single matrix (left-)multiplication:
 
 $$
 \begin{pmatrix}
@@ -295,6 +295,31 @@ y_0 \\
 x_0+t_x \\
 y_0+t_y \\
 1
+\end{pmatrix}
+$$
+
+On the other hand, vector 具有空间<ins>平移不变性</ins>：
+
+$$
+\begin{pmatrix}
+x \\
+y \\
+w
+\end{pmatrix} =
+\begin{pmatrix}
+1 & 0 & t_x \\
+0 & 1 & t_y \\
+0 & 0 & 1
+\end{pmatrix}
+\begin{pmatrix}
+x_0 \\
+y_0 \\
+0
+\end{pmatrix} =
+\begin{pmatrix}
+x_0 \\
+y_0 \\
+0
 \end{pmatrix}
 $$
 
