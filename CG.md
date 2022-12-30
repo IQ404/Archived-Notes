@@ -377,7 +377,7 @@ Then, we can see that, in homogenous coordinates:
 
 <br>
 
-Any affine map:
+Any affine map of a point $(x_0,y_0)$:
 
 $$
 \begin{pmatrix}
