@@ -176,7 +176,7 @@ $$
 
 # Transformation<a name="transformation"></a>
 
-- Scale:
+### Scale:
 
 $$\vec v = S_{a,b} \vec {v_0}$$
 
@@ -195,7 +195,7 @@ y_0
 \end{pmatrix}
 $$
 
-- Reflection on y-axis:
+### Reflection on y-axis:
 
 $$
 \begin{pmatrix}
@@ -212,7 +212,7 @@ y_0
 \end{pmatrix}
 $$
 
-- Shear（切变）on the line $y=1$ with $(0,1) \to (a,1)$:
+### Shear（切变）on the line $y=1$ with $(0,1) \to (a,1)$:
 
 $$
 \begin{pmatrix}
@@ -229,7 +229,7 @@ y_0
 \end{pmatrix}
 $$
 
-- Rotation:
+### Rotation:
 
 Define: by default, we rotate <ins>counter-clockwise w.r.t the origin</ins>.
 
