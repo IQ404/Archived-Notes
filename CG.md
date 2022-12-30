@@ -255,8 +255,16 @@ $$
   
 其中$R_{\theta}$可通过特殊点$(1,0)$及$(0,1)$的变换中得出。
 
-$$♦️ ♦️ ♦️ ♦️ ♦️$$
+<br>
 
 - A <ins>linear transformation</ins> of $n$-dimensional vector $\iff$ A $n \times n$ matrix.
+
+- A translation can be represented as follows:
+
+$$x=x_0+t_x$$
+
+$$y=y_0+t_y$$
+
+Since there is no matrix which can produce such transformation, <ins>translation is not linear transformation</ins>.
 
 ---
