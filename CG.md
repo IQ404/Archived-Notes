@@ -265,6 +265,24 @@ $$
   $$y=y_0+t_y$$
 
   We can see that: there is no matrix which can produce such transformation $\iff$ <ins>translation is not linear transformation</ins>.
+  
+  We can rather represent the translation as follows:
+  
+$$
+\begin{pmatrix}
+x \\
+y
+\end{pmatrix} =
+I_{2\times 2}
+\begin{pmatrix}
+x_0 \\
+y_0
+\end{pmatrix} +
+\begin{pmatrix}
+t_x \\
+t_y
+\end{pmatrix}
+$$
 
 ## Homogeneous Coordinates（齐次坐标）
 
