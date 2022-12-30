@@ -377,7 +377,7 @@ Then, we can see that, in homogenous coordinates:
 
 <br>
 
-Any affine map of a point $(x_0,y_0)$:
+Any affine map:
 
 $$
 \begin{pmatrix}
@@ -404,7 +404,7 @@ $$
 \begin{pmatrix}
 x \\
 y \\
-1
+w
 \end{pmatrix} =
 \begin{pmatrix}
 a & b & t_x \\
@@ -414,7 +414,7 @@ c & d & t_y \\
 \begin{pmatrix}
 x_0 \\
 y_0 \\
-1
+w
 \end{pmatrix}
 $$
 
