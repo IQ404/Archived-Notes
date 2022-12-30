@@ -237,8 +237,8 @@ x \\
 y
 \end{pmatrix} =
 \begin{pmatrix}
-1 & a \\
-0 & 1
+\cos{\theta} & - \sin{\theta} \\
+\sin{\theta} & \cos{\theta}
 \end{pmatrix}
 \begin{pmatrix}
 x_0 \\
