@@ -212,7 +212,7 @@ y_0
 \end{pmatrix}
 $$
 
-- Shear（切变）on the line $y=1$ with $(0,1) \to (a,1)$:
+- Shear（切变/错切）on the line $y=1$ with $(0,1) \to (a,1)$:
 
 $$
 \begin{pmatrix}
@@ -266,6 +266,38 @@ $$
 
   We can see that: there is no matrix which can produce such transformation $\iff$ <ins>translation is not linear transformation</ins>.
 
-- 
+## Homogeneous Coordinates（齐次坐标）
+
+In <ins>2D</ins>, define:
+
+- point: $(x,y,1)^T$
+- vector: $(x,y,0)^T$
+
+Now, we can represent translation of 2D <ins>point</ins> under homogenous coordinates by:
+
+$$
+\begin{pmatrix}
+x \\
+y \\
+w
+\end{pmatrix}
+=
+\begin{pmatrix}
+1 & 0 & t_x \\
+0 & 1 & t_y \\
+0 & 0 & 1
+\end{pmatrix}
+\begin{pmatrix}
+x_0 \\
+y_0 \\
+1
+\end{pmatrix}
+=
+\begin{pmatrix}
+x_0+t_x \\
+y_0+t_y \\
+1
+\end{pmatrix}
+$$
 
 ---
