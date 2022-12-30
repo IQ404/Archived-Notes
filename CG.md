@@ -230,26 +230,26 @@ y_0
 $$
 
 - Rotation: (by default: <ins>WRT the origin $(0,0)$ counter-clockwise</ins>)
-  
-  $$
-  \begin{pmatrix}
-  x \\
-  y
-  \end{pmatrix} =
-  R_{\theta}
-  \begin{pmatrix}
-  x_0 \\
-  y_0
-  \end{pmatrix} =
-  \begin{pmatrix}
-  \cos{\theta} & - \sin{\theta} \\
-  \sin{\theta} & \cos{\theta}
-  \end{pmatrix}
-  \begin{pmatrix}
-  x_0 \\
-  y_0
-  \end{pmatrix}
-  $$
+
+$$
+\begin{pmatrix}
+x \\
+y
+\end{pmatrix} =
+R_{\theta}
+\begin{pmatrix}
+x_0 \\
+y_0
+\end{pmatrix} =
+\begin{pmatrix}
+\cos{\theta} & - \sin{\theta} \\
+\sin{\theta} & \cos{\theta}
+\end{pmatrix}
+\begin{pmatrix}
+x_0 \\
+y_0
+\end{pmatrix}
+$$
   
   其中$R_{\theta}$可通过特殊$(1,0)$及$(0,1)$的变换中得出。
 
