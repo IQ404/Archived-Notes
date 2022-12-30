@@ -298,7 +298,7 @@ y_0+t_y \\
 \end{pmatrix}
 $$
 
-On the other hand, vector 具有空间<ins>平移不变性</ins>：
+On the other hand, vector 具有<ins>平移不变性</ins>：
 
 $$
 \begin{pmatrix}
@@ -322,5 +322,13 @@ y_0 \\
 0
 \end{pmatrix}
 $$
+
+Further Define:
+
+- Any 2D point (i.e. $w\neq 0$) in homogenous coordinates $(x,y,w)^T$ represent the 2D point $(x/w,y/w,1)^T$.
+
+Then, we can see that, in homogenous coordinates:
+
+- vector $+$ vector $\eq$ vector
 
 ---
