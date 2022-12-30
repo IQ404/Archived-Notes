@@ -195,4 +195,23 @@ y_0
 \end{pmatrix}
 $$
 
+- Reflection on y-axis:
+
+$$
+\begin{pmatrix}
+x \\
+y
+\end{pmatrix} =
+\begin{pmatrix}
+-1 & 0 \\
+0 & 1
+\end{pmatrix}
+\begin{pmatrix}
+x_0 \\
+y_0
+\end{pmatrix}
+$$
+
+- 
+
 ---
