@@ -256,6 +256,18 @@ $$
   
 其中$R_{\theta}$可通过特殊点$(1,0)$及$(0,1)$的变换中得出。
 
+值得注意：
+
+$$R_{-\theta}=R_{\theta}^{-1}=
+\begin{pmatrix}
+\cos{\theta} & \sin{\theta} \\
+-\sin{\theta} & \cos{\theta}
+\end{pmatrix}=
+R_{\theta}^{T}
+$$
+
+i.e. 旋转矩阵是一种正交矩阵。
+
 <br>
 
 - A <ins>linear transformation</ins> of $n$-dimensional vector $\iff$ A $n \times n$ matrix.
