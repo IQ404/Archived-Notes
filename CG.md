@@ -176,6 +176,8 @@ $$
 
 # Transformation<a name="transformation"></a>
 
+## 2D Transformations
+
 - Scale:
 
 $$\vec v = S_{a,b} \vec {v_0}$$
@@ -307,7 +309,7 @@ $$
 
 i.e. affine map $=$ linear map $+$ translation
 
-## Homogeneous Coordinates（齐次坐标）
+### Homogeneous Coordinates（齐次坐标）
 
 In <ins>2D</ins>, define:
 
@@ -458,5 +460,7 @@ $$
 <br>
 
 The transformation that rotates $\theta$ around a given point $c$:  $$T(\vec c) \cdot R(\theta) \cdot T(-\vec c)$$
+
+
 
 ---
