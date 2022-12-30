@@ -231,8 +231,7 @@ $$
 
 - Rotation:
 
-  Define: by default, we rotate <ins>counter-clockwise w.r.t the origin</ins>. $$
-\begin{pmatrix}
+  Define: by default, we rotate <ins>counter-clockwise w.r.t the origin</ins>. $$\begin{pmatrix}
 x \\
 y
 \end{pmatrix} =
