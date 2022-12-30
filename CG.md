@@ -255,4 +255,6 @@ $$
   
 其中$R_{\theta}$可通过特殊点$(1,0)$及$(0,1)$的变换中得出。
 
+- A <ins>linear transformation</ins> of $n$-dimensional vector \iff A $n \times n$ matrix.
+
 ---
