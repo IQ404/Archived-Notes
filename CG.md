@@ -368,7 +368,7 @@ Further Define:
 
 - Any 2D point (i.e. $w\neq 0$) in homogenous coordinates $(x,y,w)^T$ represent the 2D point $(x/w,y/w,1)^T$.
 
-Then, we can see that, in homogenous coordinates:
+Then, we can see that, in homogenous coordinates with $w=0$ or reduced to $1$:
 
 - vector $+$ vector $=$ vector
 - point $-$ point $=$ vector
@@ -398,7 +398,7 @@ t_y
 \end{pmatrix}
 $$
 
-can be written in homogenous coordinates with $w=0$ or reduced to $1$:
+can be written in homogenous coordinates:
 
 $$
 \begin{pmatrix}
