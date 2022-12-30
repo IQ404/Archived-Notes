@@ -307,11 +307,11 @@ t_y
 \end{pmatrix}
 $$
 
-i.e. affine map $=$ first do linear mapping, then do translation.
+i.e. affine map $=$ <ins>first do linear mapping, then do translation</ins>.
 
 ### Homogeneous Coordinates（齐次坐标）
 
-<ins>Note</ins>: All the conclusions in 2D are still true in 3D!!!
+<ins>Note</ins>: All the conclusions in 2D are still true in 3D.
 
 In <ins>2D</ins>, define:
 
