@@ -212,6 +212,21 @@ y_0
 \end{pmatrix}
 $$
 
-- 
+- Shear（切变）on the line $y=1$ with $(0,1) \to (a,1)$:
+
+$$
+\begin{pmatrix}
+x \\
+y
+\end{pmatrix} =
+\begin{pmatrix}
+1 & a \\
+0 & 1
+\end{pmatrix}
+\begin{pmatrix}
+x_0 \\
+y_0
+\end{pmatrix}
+$$
 
 ---
