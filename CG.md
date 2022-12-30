@@ -229,9 +229,12 @@ y_0
 \end{pmatrix}
 $$
 
-- Rotation: (by default: <ins>WRT the origin $(0,0)$ counter-clockwise</ins>)
+- Rotation:
 
-  $$\begin{pmatrix}
+Define: by default, we rotate <ins>counter-clockwise w.r.t the origin</ins>.
+
+$$
+\begin{pmatrix}
 x \\
 y
 \end{pmatrix} =
@@ -250,6 +253,6 @@ y_0
 \end{pmatrix}
 $$
   
-  其中$R_{\theta}$可通过特殊$(1,0)$及$(0,1)$的变换中得出。
+其中$R_{\theta}$可通过特殊$(1,0)$及$(0,1)$的变换中得出。
 
 ---
