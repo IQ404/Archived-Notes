@@ -398,7 +398,7 @@ t_y
 \end{pmatrix}
 $$
 
-can be written in homogenous coordinates:
+can be written in homogenous coordinates with $w=0$ or reduced to $1$:
 
 $$
 \begin{pmatrix}
