@@ -455,4 +455,8 @@ T(t_x,t_y)=
 \end{pmatrix}
 $$
 
+<br>
+
+The transformation that rotates $\theta$ around a given point $c$:  $$T(\vec c) \dot R(\theta) \dot T(-\vec c)$$
+
 ---
