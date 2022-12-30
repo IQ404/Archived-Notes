@@ -280,8 +280,7 @@ $$
 x \\
 y \\
 w
-\end{pmatrix}
-=
+\end{pmatrix} =
 \begin{pmatrix}
 1 & 0 & t_x \\
 0 & 1 & t_y \\
@@ -291,8 +290,7 @@ w
 x_0 \\
 y_0 \\
 1
-\end{pmatrix}
-=
+\end{pmatrix} =
 \begin{pmatrix}
 x_0+t_x \\
 y_0+t_y \\
