@@ -260,10 +260,12 @@ $$
 
 - A translation can be represented as follows:
 
-$$x=x_0+t_x$$
+  $$x=x_0+t_x$$
 
-$$y=y_0+t_y$$
+  $$y=y_0+t_y$$
 
-Since there is no matrix which can produce such transformation, <ins>translation is not linear transformation</ins>.
+  Since there is no matrix which can produce such transformation, <ins>translation is not linear transformation</ins>.
+
+- 
 
 ---
