@@ -457,6 +457,6 @@ $$
 
 <br>
 
-The transformation that rotates $\theta$ around a given point $c$:  $$T(\vec c) \dot R(\theta) \dot T(-\vec c)$$
+The transformation that rotates $\theta$ around a given point $c$:  $$T(\vec c) \cdot R(\theta) \cdot T(-\vec c)$$
 
 ---
