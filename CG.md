@@ -233,7 +233,7 @@ $$
 
   Define: by default, we rotate <ins>counter-clockwise w.r.t the origin</ins>.
 
-  $$
+  $${
 \begin{pmatrix}
 x \\
 y
@@ -250,7 +250,7 @@ y_0
 \begin{pmatrix}
 x_0 \\
 y_0
-\end{pmatrix}
+\end{pmatrix}}
 $$
   
   其中$R_{\theta}$可通过特殊点$(1,0)$及$(0,1)$的变换中得出。
