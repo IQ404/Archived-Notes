@@ -418,4 +418,39 @@ w
 \end{pmatrix}
 $$
 
+For examples:
+
+- Scale:
+
+$$
+S(s_x,s_y)=
+\begin{pmatrix}
+s_x & 0 & 0 \\
+0 & s_y & 0 \\
+0 & 0 & 1
+\end{pmatrix}
+$$
+
+- Rotation:
+
+$$
+R(\theta)=
+\begin{pmatrix}
+\cos{\theta} & -\sin{\theta} & 0 \\
+\sin{theta} & \cos{\theta} & 0 \\
+0 & 0 & 1
+\end{pmatrix}
+$$
+
+- Translation:
+
+$$
+T(t_x,t_y)=
+\begin{pmatrix}
+1 & 0 & t_x \\
+0 & 1 & t_y \\
+0 & 0 & 1
+\end{pmatrix}
+$$
+
 ---
