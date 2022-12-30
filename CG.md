@@ -231,7 +231,7 @@ $$
 
 - Rotation: (by default: <ins>WRT the origin $(0,0)$ counter-clockwise</ins>)
 
-$$
+  $$
 \begin{pmatrix}
 x \\
 y
