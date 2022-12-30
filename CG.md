@@ -1,5 +1,14 @@
+# Xiaoyang Liu's Notes on Computer Graphics
+
+## Menu<a name="menu"></a>
+
+- [Overview](#overview)
+- [Linear Algebra](#LA)
+- [Transformation](#transformation)
 
 ---
+
+# Overview<a name="overview"></a>
 
 - Computer Graphics: the use of computers to <ins>synthesize</ins>（合成）and <ins>manipulate</ins>（操作）visual information.
 
@@ -26,6 +35,8 @@
 - Use an IDE! (<ins>Visual Studio</ins> for Windows, <ins>Visual Studio Code</ins> for cross platform, <ins>NOT</ins> recommend for C++: CLion, Eclipse, Sublime Text, Vi/Vim, Emacs)
 
 ---
+
+# Linear Algebra<a name="LA"></a>
 
 - 计算机图形学依赖于：
 
@@ -162,6 +173,9 @@ $$
   - $(AB)^{T}=B^{T}A^{T}$
 
 ---
+
+# Transformation<a name="transformation"></a>
+
 
 
 ---
