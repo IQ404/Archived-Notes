@@ -235,7 +235,14 @@ $$
 \begin{pmatrix}
 x \\
 y
-\end{pmatrix} =
+\end{pmatrix}
+=
+R_{\theta}
+\begin{pmatrix}
+x_0 \\
+y_0
+\end{pmatrix}
+=
 \begin{pmatrix}
 \cos{\theta} & - \sin{\theta} \\
 \sin{\theta} & \cos{\theta}
