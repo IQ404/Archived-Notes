@@ -178,7 +178,7 @@ $$
 
 ## 2D Transformations
 
-- Scale:
+📜 Scale:
 
 $$\vec v = S_{a,b} \vec {v_0}$$
 
@@ -197,7 +197,7 @@ y_0
 \end{pmatrix}
 $$
 
-- Reflection on y-axis:
+📜 Reflection on y-axis:
 
 $$
 \begin{pmatrix}
@@ -214,7 +214,7 @@ y_0
 \end{pmatrix}
 $$
 
-- Shear（切变/错切）on the line $y=1$ with $(0,1) \to (a,1)$:
+📜 Shear（切变/错切）on the line $y=1$ with $(0,1) \to (a,1)$:
 
 $$
 \begin{pmatrix}
@@ -231,7 +231,7 @@ y_0
 \end{pmatrix}
 $$
 
-- Rotation:
+📜 Rotation:
 
 Define: by default, we rotate <ins>counter-clockwise w.r.t the origin</ins>.
 
@@ -270,17 +270,17 @@ i.e. 旋转矩阵是一种正交矩阵。
 
 <br>
 
-- A <ins>linear transformation</ins> of $n$-dimensional vector $\iff$ A $n \times n$ matrix.
+📜 A <ins>linear transformation</ins> of $n$-dimensional vector $\iff$ A $n \times n$ matrix.
 
-- A translation can be represented as follows:
+📜 A translation can be represented as follows:
 
   $$x=x_0+t_x$$
 
   $$y=y_0+t_y$$
 
-  We can see that: there is no matrix which can produce such transformation $\iff$ <ins>translation is not linear transformation</ins>.
+We can see that: there is no matrix which can produce such transformation $\iff$ <ins>translation is not linear transformation</ins>.
   
-  We can rather represent the translation as follows:
+We can rather represent the translation as follows:
   
 $$
 \begin{pmatrix}
@@ -298,7 +298,7 @@ t_y
 \end{pmatrix}
 $$
 
-- 仿射变换（Affine Transformation/Map）：
+📜 仿射变换（Affine Transformation/Map）：
 
 $$
 \begin{pmatrix}
@@ -323,7 +323,7 @@ i.e. affine map $=$ <ins>first do linear mapping, then do translation</ins>.
 
 ### Homogeneous Coordinates（齐次坐标）
 
-<ins>Note</ins>: All the conclusions in 2D are still true in 3D.
+<ins>Note</ins>: All the conclusions here in 2D are still true in 3D.
 
 In <ins>2D</ins>, define:
 
@@ -471,9 +471,7 @@ T(t_x,t_y)=
 \end{pmatrix}
 $$
 
-<br>
-
-The transformation that rotates $\theta$ around a given point $c$:  $$T(\vec c) \cdot R(\theta) \cdot T(-\vec c)$$
+📜 The transformation that rotates $\theta$ around a given point $c$:  $$T(\vec c) \cdot R(\theta) \cdot T(-\vec c)$$
 
 📜 
 
