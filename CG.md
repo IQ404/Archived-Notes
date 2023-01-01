@@ -3,7 +3,7 @@
 ## Menu<a name="menu"></a>
 
 - [Overview](#overview)
-- [Linear Algebra](#LA)
+- [Linear Algebra](#la)
 - [Transformation](#transformation)
 
 ---
@@ -36,7 +36,7 @@
 
 ---
 
-# Linear Algebra<a name="LA"></a>
+# Linear Algebra<a name="la"></a>
 
 - 计算机图形学依赖于：
 
@@ -501,7 +501,7 @@ T(t_x,t_y,t_z)=
 \end{pmatrix}
 $$
 
-📜 Rotation around $x$-, $y$- or $z$-axis (anti-clockwise, 右手系):
+📜 Rotation around $x$-, $y$- or $z$-axis (anti-clockwise w.r.t the axis pointing outwards, 右手系):
 
 $$
 R_x(\theta)=
