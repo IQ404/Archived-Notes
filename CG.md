@@ -533,4 +533,6 @@ R_z(\theta)=
 \end{pmatrix}
 $$
 
+Note: inside $R_y$ the rotation is inversed because we are using 右手系 (i.e. $z$-axis is pointing outwards).
+
 ---
