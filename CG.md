@@ -501,7 +501,7 @@ T(t_x,t_y,t_z)=
 \end{pmatrix}
 $$
 
-📜 Rotation around $x$-, $y$- or $z$-axis:
+📜 Rotation around $x$-, $y$- or $z$-axis (anti-clockwise, 右手系):
 
 $$
 R_x(\theta)=
@@ -533,6 +533,6 @@ R_z(\theta)=
 \end{pmatrix}
 $$
 
-Note: inside $R_y$ the rotation is inversed because we are using 右手系 (i.e. $z$-axis is pointing outwards).
+
 
 ---
