@@ -300,6 +300,8 @@ $$
 
 📜 仿射变换（Affine Transformation/Map）：
 
+A transformation that accounts for linear map and translation.
+
 $$
 \begin{pmatrix}
 x \\
@@ -319,7 +321,7 @@ t_y
 \end{pmatrix}
 $$
 
-i.e. affine map $=$ <ins>first do linear mapping, then do translation</ins>.
+<ins>Note<ins>: following the particular definition of affine map above, affine map will <ins>first do linear mapping, then do translation</ins>.
 
 📜 Homogeneous Coordinates（齐次坐标）
 
