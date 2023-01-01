@@ -321,7 +321,7 @@ $$
 
 i.e. affine map $=$ <ins>first do linear mapping, then do translation</ins>.
 
-### Homogeneous Coordinates（齐次坐标）
+📜 Homogeneous Coordinates（齐次坐标）
 
 <ins>Note</ins>: All the conclusions here in 2D are still true in 3D.
 
