@@ -395,7 +395,7 @@ Then, we can see that, in homogenous coordinates with $w=0$ or <ins>reduced</ins
 
 <br>
 
-Any affine map:
+Any affine map of the form (i.e. first do linear map, then do translation):
 
 $$
 \begin{pmatrix}
