@@ -321,7 +321,7 @@ t_y
 \end{pmatrix}
 $$
 
-<ins>Note<ins>: following the particular definition of affine map above, affine map will <ins>first do linear mapping, then do translation</ins>.
+<ins>Note</ins>: following the particular definition of affine map above, affine map will <ins>first do linear mapping, then do translation</ins>.
 
 📜 Homogeneous Coordinates（齐次坐标）
 
