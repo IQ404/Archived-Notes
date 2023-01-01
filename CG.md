@@ -475,6 +475,62 @@ $$
 
 📜 The transformation that rotates $\theta$ around a given point $c$:  $$T(\vec c) \cdot R(\theta) \cdot T(-\vec c)$$
 
-📜 
+## 3D Transformations
+
+📜 Scale:
+
+$$
+S(s_x,s_y,s_z)=
+\begin{pmatrix}
+s_x & 0 & 0 & 0 \\
+0 & s_y & 0 & 0 \\
+0 & 0 & s_z & 0 \\
+0 & 0 & 0 & 1
+\end{pmatrix}
+$$
+
+📜 Translation:
+
+$$
+T(t_x,t_y,t_z)=
+\begin{pmatrix}
+1 & 0 & 0 & t_x \\
+0 & 1 & 0 & t_y \\
+0 & 0 & 1 & t_z \\
+0 & 0 & 0 & 1
+\end{pmatrix}
+$$
+
+📜 Rotation around $x$-, $y$- or $z$-axis:
+
+$$
+R_x(\theta)=
+\begin{pmatrix}
+1 & 0 & 0 & 0 \\
+0 & \cos \theta & -\sin \theta & 0 \\
+0 & \sin \theta & \cos \theta & 0 \\
+0 & 0 & 0 & 1
+\end{pmatrix}
+$$
+
+$$
+R_y(\theta)=
+\begin{pmatrix}
+\cos \theta & 0 & \sin \theta & 0 \\
+0 & 1 & 0 & 0 \\
+-\sin \theta & 0 & \cos \theta & 0 \\
+0 & 0 & 0 & 1
+\end{pmatrix}
+$$
+
+$$
+R_z(\theta)=
+\begin{pmatrix}
+\cos \theta & -\sin \theta & 0 & 0 \\
+\sin \theta & \cos \theta & 0 & 0 \\
+0 & 0 & 1 & 0 \\
+0 & 0 & 0 & 1
+\end{pmatrix}
+$$
 
 ---
