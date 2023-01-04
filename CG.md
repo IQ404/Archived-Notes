@@ -565,6 +565,32 @@ where $R$ is a $3\times 3$ matrix, $I$ is the $3\times 3$ identity matrix, $\vec
 
 📜 We always transform al the things in the world so that the camera is at the origin, up at $y$-axis and looking at $-z$-axis.
 
+To do this, we have:
+
+$$
+M_{\text{view}}=R_{\text{view}}T_{\text{view}}
+$$
+
+where $T_{view}$ is a translation from a world position $e$ to the origin:
+
+$$
+
+$$
+
+where $e$ is the original position of the camera (when it is not at the origin).
+
+$R_{\text{view}}$ is the rotation that aligns the original orientation of the camera with the $x$-, $y$-, $z$-axis. To write such a matrix, we can first write down the matrix which rotates $\hat{x}$, $\hat{y}$, $\hat{z}$ to the original orientation of the camera (which is easier to write):
+
+$$
+
+$$
+
+Since $R^{'}$ is a rotation matrix, we can see that:
+
+$$
+R_{\text{view}}=R_{\text{view}}^{-1}
+$$
+
 ## Projection transformation
 
 ---
