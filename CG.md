@@ -533,7 +533,16 @@ R_z(\theta)=
 \end{pmatrix}
 $$
 
+❓ IF Pitch and Yaw can represent Roll, why would we need Roll?
+
 📜 Rodrigues' Rotation Formula
+
+$$
+R(\vec{n}, \theta)=
+\cos{(\theta)}I+(1-\cos{(\theta)})\vec{n}\vec{n}^T+\sin{(\theta)}
+$$
+
+where $R$ is a $3\times 3$ matrix, $I$ is the $3\times 3$ identity matrix, $\vec{n}$ is the $3\times 1$ vector <ins>starting from the origin</ins> representing the rotation axis and $\theta$ is the amount of angle we rotate (anti-clockwise).
 
 📜 Quaternion（四元数）
 
