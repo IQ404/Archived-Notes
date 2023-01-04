@@ -535,7 +535,7 @@ R_z(\theta)=
 \end{pmatrix}
 $$
 
-❓ IF Pitch and Yaw can represent Roll, why would we need Roll?
+❓ If Pitch and Yaw can represent Roll, why would we need Roll?
 
 📜 Rodrigues' Rotation Formula
 
