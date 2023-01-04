@@ -553,7 +553,17 @@ where $R$ is a $3\times 3$ matrix, $I$ is the $3\times 3$ identity matrix, $\vec
 
 📜 Quaternion（四元数）
 
+主要为求旋转与旋转之间的插值而引入。四元数与矩阵存在一一对应的转化。需用其解决具体问题时可自行查找相关资料。
+
 ## View / Camera transformation
+
+📜 To define a camera, we need:
+
+- its position: $\vec{e}$
+- its look-at (gaze) direction: $\hat{g}$
+- its up direction: $\hat{t}$
+
+📜 We always transform al the things in the world so that the camera is at the origin, up at $y$-axis and looking at $-z$-axis.
 
 ## Projection transformation
 
