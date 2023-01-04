@@ -124,6 +124,8 @@ $$
 
 - 如果在一个 Cartesian Coordinates 里 $\vec x \times \vec y = \vec z$, 那么我们就说这个坐标系是一个<ins>右手坐标系</ins>。 反之若$\vec x \times \vec y = - \vec z$，则该坐标系为<ins>左手坐标系</ins>。
 
+- <ins>Note</ins>: OpenGL uses left hand coords.
+
 - Algebraically: (其中 $A^* $ 称作 dual matrix)
 
 $$
@@ -615,5 +617,13 @@ x_{- \hat{g}} & y_{- \hat{g}} & z_{- \hat{g}} & 0 \\
 $$
 
 ## Projection transformation
+
+- 正交投影与透视投影的区别在于前者没有近大远小的性质而后者有。
+
+📜 Orthographic projection（正交投影）
+
+
+
+📜 Perspective projection（透视投影）
 
 ---
