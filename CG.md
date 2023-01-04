@@ -549,7 +549,7 @@ $$
 
 where $R$ is a $3\times 3$ matrix, $I$ is the $3\times 3$ identity matrix, $\vec{n}$ is the $3\times 1$ vector <ins>starting from the origin</ins> representing the rotation axis and $\theta$ is the amount of angle we rotate (anti-clockwise).
 
-Note that the rightmost matrix is the matrix representation of the cross product of $\vec{n}$.
+<ins>Note</ins> that the rightmost matrix is the matrix representation of $\vec{n} \times$.
 
 📜 Quaternion（四元数）
 
