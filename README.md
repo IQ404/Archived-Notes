@@ -14,6 +14,13 @@ The contents in those notes are written by myself but they are <ins>by no means<
 In progress:
 
 - [Computer Graphics](CG.md)
+
+  This is mostly based on [GAMES101](https://sites.cs.ucsb.edu/~lingqi/teaching/games101.html) and [GAMES202](https://sites.cs.ucsb.edu/~lingqi/teaching/games202.html) by [Lingqi Yan](https://sites.cs.ucsb.edu/~lingqi/).
+
+- [Game Engine]()
+  
+  This is mostly based on [GAMES104](http://games-cn.org/games104/).
+
 - [Unreal Engine](UE.md)
 
 ---
