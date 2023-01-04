@@ -585,10 +585,16 @@ $$
 
 $$
 
-Since $R^{'}$ is a rotation matrix, we can see that:
+Now, note the statements:
+
+- All rotation matrices are orthogonal.
+- For orthogonal matrix $M$, we have $M^{-1}=M^T$
+
+Hence, we can see that:
 
 $$
-R_{\text{view}}=R_{\text{view}}^{-1}
+R_{\text{view}}=(R^{'})^{-1}=(R^{'})^{T}=
+
 $$
 
 ## Projection transformation
