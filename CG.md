@@ -607,9 +607,9 @@ Hence, we can see that:
 $$
 R_{\text{view}}=(R^{'})^{-1}=(R^{'})^{T}=
 \begin{pmatrix}
-x_{\hat{g}\times\hat{t}} & x_{\hat{t}} & x_{- \hat{g}} & 0 \\
-y_{\hat{g}\times\hat{t}} & y_{\hat{t}} & y_{- \hat{g}} & 0 \\
-z_{\hat{g}\times\hat{t}} & z_{\hat{t}} & z_{- \hat{g}} & 0 \\
+x_{\hat{g}\times\hat{t}} & y_{\hat{g}\times\hat{t}} & z_{\hat{g}\times\hat{t}} & 0 \\
+x_{\hat{t}} & y_{\hat{t}} & z_{\hat{t}} & 0 \\
+x_{- \hat{g}} & y_{- \hat{g}} & z_{- \hat{g}} & 0 \\
 0 & 0 & 0 & 1
 \end{pmatrix}
 $$
