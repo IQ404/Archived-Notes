@@ -588,7 +588,13 @@ where $e$ is the original position of the camera (when it is not at the origin).
 $R_{\text{view}}$ is the rotation that aligns the original orientation of the camera with the $x$-, $y$-, $z$-axis. To write such a matrix, we can first write down the matrix which rotates $\hat{x}$, $\hat{y}$, $\hat{z}$ to the original orientation of the camera (which is easier to write):
 
 $$
-(R^{'})^{-1}
+R^{'}=
+\begin{pmatrix}
+x_{\hat{g}\times\hat{t}} & x_{\hat{t}} & x_{- \hat{g}} & 0 \\
+y_{\hat{g}\times\hat{t}} & y_{\hat{t}} & y_{- \hat{g}} & 0 \\
+z_{\hat{g}\times\hat{t}} & z_{\hat{t}} & z_{- \hat{g}} & 0 \\
+0 & 0 & 0 & 1
+\end{pmatrix}
 $$
 
 Now, note the statements:
