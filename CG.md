@@ -574,7 +574,13 @@ $$
 where $T_{view}$ is a translation from a world position $e$ to the origin:
 
 $$
-
+T_{\text{view}}=
+\begin{pmatrix}
+1 & 0 & 0 & -x_e \\
+0 & 1 & 0 & -y_e \\
+0 & 0 & 1 & -z_e \\
+0 & 0 & 0 & 1
+\end{pmatrix}
 $$
 
 where $e$ is the original position of the camera (when it is not at the origin).
@@ -582,7 +588,7 @@ where $e$ is the original position of the camera (when it is not at the origin).
 $R_{\text{view}}$ is the rotation that aligns the original orientation of the camera with the $x$-, $y$-, $z$-axis. To write such a matrix, we can first write down the matrix which rotates $\hat{x}$, $\hat{y}$, $\hat{z}$ to the original orientation of the camera (which is easier to write):
 
 $$
-
+(R^{'})^{-1}
 $$
 
 Now, note the statements:
