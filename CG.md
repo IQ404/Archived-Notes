@@ -540,9 +540,16 @@ $$
 $$
 R(\vec{n}, \theta)=
 \cos{(\theta)}I+(1-\cos{(\theta)})\vec{n}\vec{n}^T+\sin{(\theta)}
+\begin{pmatrix}
+0 & -n_z & n_y \\
+n_z & 0 & -n_x \\
+-n_y & n_x & 0
+\end{pmatrix}
 $$
 
 where $R$ is a $3\times 3$ matrix, $I$ is the $3\times 3$ identity matrix, $\vec{n}$ is the $3\times 1$ vector <ins>starting from the origin</ins> representing the rotation axis and $\theta$ is the amount of angle we rotate (anti-clockwise).
+
+Note that the rightmost matrix is the matrix representation of the cross product of $\vec{n}$.
 
 📜 Quaternion（四元数）
 
