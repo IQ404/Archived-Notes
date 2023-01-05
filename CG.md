@@ -663,7 +663,7 @@ Then, "squish" the frustum into a cuboid such that:
 
 - All the points on the near clip plane do not change.
 - The centre point on the far clip plane (which is $(0,0,\text{far})$) do not change.
-- Any point in/on the frustum $(x,y,z)$ change to $(x^',y_n,z^')$ where $(x_n,y_n,\text{near})$ is the point on the near clip plane which is on the same ray with $(x,y,z)$.
+- Any point in/on the frustum $(x,y,z)$ change to $(x^{'},y_n,z^{'})$ where $(x_n,y_n,\text{near})$ is the point on the near clip plane which is on the same ray with $(x,y,z)$.
 
 ❓ 如何证明该矩阵确实表示该挤压过程？
 
