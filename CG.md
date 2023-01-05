@@ -638,7 +638,7 @@ Orthographic projection的目标是把该长方体映射成为Canonical cube。
 To do this, we first <ins>translate</ins> the centre of the rectangle to the origin, then <ins>scale</ins> the translated rectangle to a canonical cube:
 
 $$
-M_{ortho}=
+M_{\text{ortho}}=
 \begin{pmatrix}
 \frac{2}{\text{right}-\text{left}} & 0 & 0 & 0 \\
 0 & \frac{2}{\text{top}-\text{bottom}} & 0 & 0 \\
