@@ -5,6 +5,7 @@
 - [Overview](#overview)
 - [Linear Algebra](#la)
 - [Transformation](#transformation)
+- [Rasterization](#rasterization)
 
 ---
 
@@ -630,6 +631,6 @@ $$
 
 ---
 
-# Rasterization
+# Rasterization<a name="rasterization"></a>
 
 ---
