@@ -655,17 +655,35 @@ $$
 
 📜 Perspective projection（透视投影）
 
-❓ NEED BETTER UNDERSTANDING!!!
-
 First, in a right hand coordinates, put the camera (which forms the frustum) to the origin with its up direction being $\hat{y}$ and facing the $-z$ direction.
 
 Then, "squish" the frustum into a cuboid such that:
 
-- All the points on the near clip plane do not change.
-- The centre point on the far clip plane (which is $(0,0,\text{far})$) do not change.
-- Any point in/on the frustum $(x,y,z)$ change to $(x_n,y_n,z^{'})$ where $(x_n,y_n,\text{near})$ is the point on the near clip plane which is on the same ray with $(x,y,z)$.
+1. All the points on the near clip plane do not change.
+2. The centre point on the far clip plane $(0,0,\text{far})$ do not change.
+3. Any point in/on the frustum $(x,y,z)$ change to $(x_n,y_n,z^{'})$ where $(x_n,y_n,\text{near})$ is the point on the near clip plane which is on the same ray with $(x,y,z)$.
 
-❓ 如何证明该矩阵确实表示该挤压过程？
+Now,
+
+- ❓ Prove that under homogeneous coordinates there exists a linear transformation (a $4\times 4$ matrix $M_{\text{persp}\to\text{ortho}}$) that corresponds to this "squish".
+
+- ❓ Prove that:
+
+$$
+M_{\text{persp}\to\text{ortho}}=
+\begin{pmatrix}
+\text{near} & 0 & 0 & 0 \\
+0 & \text{near} & 0 & 0 \\
+0 & 0 & \text{near}+\text{far} & -\text{near}\times\text{far} \\
+0 & 0 & 1 & 0
+\end{pmatrix}
+$$
+
+Then, we have:
+
+$$
+M_{\text{persp}}=M_{\text{ortho}}M_{\text{persp}\to\text{ortho}}
+$$
 
 ---
 
