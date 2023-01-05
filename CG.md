@@ -655,9 +655,17 @@ $$
 
 📜 Perspective projection（透视投影）
 
+❓ NEED BETTER UNDERSTANDING!!!
 
+First, in a right hand coordinates, put the camera (which forms the frustum) to the origin with its up direction being $\hat{y}$ and facing the $-z$ direction.
 
-❓ 如何证明该“挤压”过程为affine变换（或证明该矩阵确实表示该挤压过程）？
+Then, "squish" the frustum into a cuboid such that:
+
+- All the points on the near clip plane do not change.
+- The centre point on the far clip plane (which is $(0,0,\text{far})$) do not change.
+- Any point in/on the frustum $(x,y,z)$ change to $(x^',y_n,z^')$ where $(x_n,y_n,\text{near})$ is the point on the near clip plane which is on the same ray with $(x,y,z)$.
+
+❓ 如何证明该矩阵确实表示该挤压过程？
 
 ---
 
