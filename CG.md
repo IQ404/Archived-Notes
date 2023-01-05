@@ -633,6 +633,28 @@ $$
 
 给定空间中的一个长方体（i.e. 想要显示的区域），其表示为 far, near, left, right, bottom, top 六个数字。
 
+Orthographic projection的目标是把该长方体映射成为Canonical cube。
+
+- <ins>Note</ins>: we use right hand coordinates here
+
+To do this, we first <ins>translate</ins> the centre of the rectangle to the origin, then <ins>scale</ins> the translated rectangle to a canonical cube:
+
+$$
+M_{ortho}=
+\begin{pmatrix}
+\frac{2}{\text{right}-\text{left}} & 0 & 0 & 0 \\
+0 & \frac{2}{\text{top}-\text{bottom}} & 0 & 0 \\
+0 & 0 & \frac{2}{\text{near}-\text{far}} & 0 \\
+0 & 0 & 0 & 1
+\end{pmatrix}
+\begin{pmatrix}
+1 & 0 & 0 & -\frac{\text{right}+\text{left}}{2} \\
+0 & 1 & 0 & -\frac{\text{top}+\text{bottom}}{2} \\
+0 & 0 & 1 & -\frac{\text{near}+\text{far}}{2} \\
+0 & 0 & 0 & 1
+\end{pmatrix}
+$$
+
 📜 Perspective projection（透视投影）
 
 ❓ 如何证明该“挤压”过程为线性变换（或证明该矩阵确实表示该挤压过程）？
