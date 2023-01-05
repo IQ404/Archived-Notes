@@ -619,11 +619,19 @@ $$
 
 ## Projection transformation
 
+对于透视投影，我们可以想象为将相机放置在空间中的某一个<ins>点</ins>上，以该点作为起始点向某些方向放出射线构成一个四棱锥，我们将该四棱锥内部某一深度（表示Near clip plane）到另一深度（表示Far clip plane）组成的区域称作frustum（形为一四棱台）。我们将该frustum内的所以物体都显示在Near clip plane的过程称为透视投影。
+
+对于正交投影，我们可以想象为将相机放置在<ins>无限远</ins>的地方，此时Near clip plane的大小将与Far clip plane相同（i.e. frustrum为一长方体）。我们将该frustum内的所以物体都显示在Near clip plane的过程称为正交投影。
+
 - 正交投影与透视投影的区别在于前者没有近大远小的性质而后者有。
+
+正交投影下同一平面内平行线仍平行，而透视投影下同一平面内平行线会相交。
+
+- 定义 Canonical cube：$[-1,1]^3$
 
 📜 Orthographic projection（正交投影）
 
-
+给定空间中的一个长方体（i.e. 想要显示的区域），其表示为 far, near, left, right, bottom, top 六个数字。
 
 📜 Perspective projection（透视投影）
 
