@@ -667,7 +667,7 @@ Now,
 
 - ❓ Show that such "squish" indeed gives the wanted result for perspective projection.
 
-- ❓ Prove that under homogeneous coordinates there exists a linear transformation (a $4\times 4$ matrix $M_{\text{persp}\to\text{ortho}}$) that corresponds to this "squish".
+- ❓ Prove that under homogeneous coordinates there <ins>exists</ins> a linear transformation (a $4\times 4$ matrix $M_{\text{persp}\to\text{ortho}}$) that corresponds to this "squish".
 
 - ❓ Prove that:
 
