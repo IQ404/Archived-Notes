@@ -715,6 +715,9 @@ Note that this definition is down to convention, different environment can have 
 
 <ins>Note</ins>:
 
-- Pixels' indices are in the form of $(x,y)$ where $x,y \in \mathbb{Q}$.
+- Pixels' indices are in the form of $(x,y)$ where $x,y \in \mathbb{Z}$.
+- Pixels' indices are from $(0,0)$ to $(\text{width}-1,\text{height}-1)$.
+- The "actual" pixel represented by $(x,y)$ is centered at $(x+0.5,y+0.5)$.
+- The screen covers range $$ to $(\text{width},\text{height})$.
 
 ---
