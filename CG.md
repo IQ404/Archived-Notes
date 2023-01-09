@@ -693,7 +693,7 @@ $$
 
 # Rasterization<a name="rasterization"></a>
 
-📜 屏幕是一个$2$维数组，该数组中的每一个元素为一个像素（pixel）。屏幕的大小称为分辨率（resolution），例如$1920*1080$。
+📜 屏幕是一个$2$维数组，该数组中的每一个元素为一个像素（pixel）。屏幕的大小称为分辨率（resolution），例如 $1920*1080$。
 
 📜 A <ins>simplified</ins> definition of pixel:
 
