@@ -693,7 +693,7 @@ $$
 
 # Rasterization<a name="rasterization"></a>
 
-📜 屏幕是一个$2$维数组，该数组中的每一个元素为一个像素（pixel）。屏幕的大小称为分辨率（resolution），例如 $1920*1080$。
+📜 屏幕是一个 $2$ 维数组，该数组中的每一个元素为一个像素（pixel）。屏幕的大小称为分辨率（resolution），例如 $1920*1080$。
 
 📜 A <ins>simplified</ins> definition of pixel:
 
@@ -708,5 +708,13 @@ There are mainly two ways to define the color in a pixel:
 📜 屏幕是一个典型的光栅成像设备（raster display）。
 
 📜 Raster在德语中为 screen 的意思。Rasterize 意为 drawing onto the screen。
+
+📜 Defining the screen space: $(0,0)$ on the bottom left, $y$-axis upwards, $x$ towards right.
+
+Note that this definition is down to convention, different environment can have different definition.
+
+<ins>Note</ins>:
+
+- Pixels' indices are in the form of $(x,y)$ where $x,y \in \mathbb{Q}$.
 
 ---
