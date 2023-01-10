@@ -707,7 +707,7 @@ There are mainly two ways to define the color in a pixel:
 
 📜 屏幕是一个典型的光栅成像设备（raster display）。
 
-📜 Raster在德语中为 screen 的意思。Rasterize 意为 drawing onto the screen。
+Raster在德语中为 screen 的意思。Rasterize 意为 drawing onto the screen。
 
 📜 Defining the screen space: $(0,0)$ on the bottom left, $y$-axis upwards, $x$ towards right.
 
@@ -719,5 +719,19 @@ Note that this definition is down to convention, different environment can have 
 - Pixels' indices are from $(0,0)$ to $(\text{width}-1,\text{height}-1)$.
 - The "actual" pixel represented by $(x,y)$ is centered at $(x+0.5,y+0.5)$.
 - The screen covers range $(0,0)$ to $(\text{width},\text{height})$.
+
+📜 Viewport transformation（视口变换）
+
+在得到$[-1,1]^3$的Canonical Cube后，将其$x,y$进行$[-1,1]^2 \to [0,\text{width}] \times [0,\text{height}]$的变换：
+
+$$
+M_{\text{viewport}}=
+\begin{pmatrix}
+\frac{\text{width}}{2} & 0 & 0 & \frac{\text{width}}{2} \\
+0 & \frac{\text{height}}{2} & 0 & \frac{\text{height}}{2} \\
+0 & 0 & 1 & 0 \\
+0 & 0 & 0 & 1
+\end{pmatrix}
+$$
 
 ---
