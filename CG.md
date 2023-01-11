@@ -801,8 +801,20 @@ $$
 - Easy to determine whether a point is inside a triangle or not (by cross products).
 - Well-defined method for interpolating values at vertices over triangle (barycentric interpolation).
 
+📜 Sampling
 
+Definition: evaluating a function at a point.
 
+Rasterization can be done through sampling function (with the domain being the screen space, and the range being ${0,1}$, where $0$ means the point in the screen space is outside a specific triangle and $1$ means the opposite) on the pixel locations (i.e. $(x+0.5,y+0.5)$ ).
 
+Such a function can be denoted as:
+
+$$
+\text{inside}(t,x,y)=
+\begin{cases}
+1\text{  Point (x,y) in triangle t} \\ 
+0\text{  otherwise}
+\end{cases}
+$$
 
 ---
