@@ -812,8 +812,8 @@ Such a function can be denoted as:
 $$
 \text{inside}(t,x,y)=
 \begin{cases}
-1\text{  Point (x,y) in triangle t} \\ 
-0\text{  otherwise}
+1\qquad\text{Point (x,y) in triangle t} \\ 
+0\qquad\text{otherwise}
 \end{cases}
 $$
 
