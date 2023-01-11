@@ -822,22 +822,25 @@ $$
 对于给定三角形（即 3个 screen space 里的点：$(x_1,y_1)$, $(x_2,y_2)$ 和 $(x_3,y_3)$），我们可以找到：
 
 $$
-min(x_1,x_2,x_3)
+x_{min}=min(x_1,x_2,x_3)
 $$
 
 $$
-max(x_1,x_2,x_3)
+x_{max}=max(x_1,x_2,x_3)
 $$
 
 $$
-min(y_1,y_2,y_3)
+y_{min}=min(y_1,y_2,y_3)
 $$
 
 $$
-max(y_1,y_2,y_3)
+y_{max}=max(y_1,y_2,y_3)
 $$
 
 这4个数可以表示一个与 $x,y$ 轴平行的正方形。该正方形可作为此三角形的<ins>轴向包围盒（i.e. AABB, Axis Aligned Bounding Box）</ins>。
 
+When we do the sampling for the rasterization, we only need to loop within the AABB.
+
+- ❓ 搞懂光栅化的另一种加速方法：Incremental Triangle Traversal
 
 ---
