@@ -697,10 +697,30 @@ $$
 
 📜 假设我们知道 near 和 far，则我们可利用以下两点来定义perspective projection中的视锥（frustum）：
 
-- Vertical Field of View (fovY)
-- Aspect ratio ($\frac{\text{width}}{\text{height}}$)
+- Vertical Field of View (简写为fovY，译为“垂直可视角度”。fov译为“视角”)
+- Aspect ratio ($=\frac{\text{width}}{\text{height}}$)
 
 其中 width 和 height 为 near clip plane 的宽度和高度。
+
+<ins>Note</ins>: given aspect ratio, fovY and fovX（译为“水平可视角度”） can always be derived from each other.
+
+注意，此时相机应已在标准位置（位于原点，朝向$-\hat{z}$，向上方向为$\hat{y}$），因此我们可 convert fovY and aspect ratio to $l,r,b,t$ (left, right, bottom, top) of the near clip plane:
+
+$$
+\tan{\frac{\text{fovY}}{2}=\frac{\text{top}}{|\text{near}|}}
+$$
+
+$$
+\text{bottom}=-\text{top}
+$$
+
+$$
+\text{aspect ratio}=\frac{\text{right}}{\text{top}}
+$$
+
+$$
+\text{left}=-\text{right}
+$$
 
 📜 屏幕是一个 $2$ 维数组，该数组中的每一个元素为一个像素（pixel）。屏幕的大小称为分辨率（resolution），例如 $1920*1080$。
 
