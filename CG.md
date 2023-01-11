@@ -805,7 +805,7 @@ $$
 
 Definition: evaluating a function at a point.
 
-Rasterization can be done through sampling function (with the domain being the screen space, and the range being $\begin{bmatrix} 0,1 \end{bmatrix}$, where $0$ means the point in the screen space is outside a specific triangle and $1$ means the opposite) on the pixel locations (i.e. $(x+0.5,y+0.5)$ ).
+Rasterization can be done through sampling function (with the domain being the screen space, and the range being $\begin{Bmatrix} 0,1 \end{Bmatrix}$, where $0$ means the point in the screen space is outside a specific triangle and $1$ means the opposite) on the pixel locations (i.e. $(x+0.5,y+0.5)$ ).
 
 Such a function can be denoted as:
 
