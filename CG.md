@@ -704,7 +704,7 @@ $$
 
 <ins>Note</ins>: given aspect ratio, fovY and fovX（译为“水平可视角度”） can always be derived from each other.
 
-注意，此时相机应已在标准位置（位于原点，朝向$-\hat{z}$，向上方向为$\hat{y}$），因此我们可 convert fovY and aspect ratio to $\text{left}, \text{right}, \text{bottom}, \text{top} of the near clip plane:
+注意，此时相机应已在标准位置（位于原点，朝向$-\hat{z}$，向上方向为$\hat{y}$），因此我们可 convert fovY and aspect ratio to $\text{left}, \text{right}, \text{bottom}, \text{top}$ of the near clip plane:
 
 $$
 \tan{\frac{\text{fovY}}{2}=\frac{\text{top}}{|\text{near}|}}
