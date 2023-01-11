@@ -693,6 +693,15 @@ $$
 
 # Rasterization<a name="rasterization"></a>
 
+📜 光栅化主要应用于<ins>实时应用</ins>（游戏，VR etc.）。
+
+📜 假设我们知道 near 和 far，则我们可利用以下两点来定义perspective projection中的视锥（frustum）：
+
+- Vertical Field of View (fovY)
+- Aspect ratio ($\frac{\text{width}}{\text{height}}$)
+
+其中 width 和 height 为 near clip plane 的宽度和高度。
+
 📜 屏幕是一个 $2$ 维数组，该数组中的每一个元素为一个像素（pixel）。屏幕的大小称为分辨率（resolution），例如 $1920*1080$。
 
 📜 A <ins>simplified</ins> definition of pixel:
