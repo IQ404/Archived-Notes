@@ -739,6 +739,10 @@ There are mainly two ways to define the color in a pixel:
 - Mixing from red, green and blue, each represented by a number.
 - 256 levels each represents a color where 0 is black and 255 is white.
 
+❓ iPhone 6S 的屏幕上每个像素的内部并不是一个uniform的颜色，而是红绿蓝三个平行的条组成的。解释像素的真实内部结构。
+
+❓ 解释 Bayer pattern（被应用于例如Galaxy S5 的屏幕上）。
+
 📜 显示器上显示的信息是被存放在显卡的内存（显存）上的。
 
 ❓ 详细分析DAC（Digital to Analog Convertors）的原理。
@@ -842,5 +846,9 @@ $$
 When we do the sampling for the rasterization, we only need to loop within the AABB.
 
 - ❓ 搞懂光栅化的另一种加速方法：Incremental Triangle Traversal
+
+📜 
+
+
 
 ---
