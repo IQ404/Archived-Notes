@@ -695,7 +695,7 @@ $$
 
 📜 光栅化主要应用于<ins>实时应用</ins>（游戏，VR etc.）。
 
-📜 假设我们知道 near 和 far，则我们可利用以下两点来定义perspective projection中的视锥（frustum）：
+📜 假设我们知道 $\text{near}$ 和 $\text{far}$，则我们可利用以下两点来定义perspective projection中的视锥（frustum）：
 
 - Vertical Field of View (简写为fovY，译为“垂直可视角度”。fov译为“视角”)
 - Aspect ratio ($=\frac{\text{width}}{\text{height}}$)
@@ -704,7 +704,7 @@ $$
 
 <ins>Note</ins>: given aspect ratio, fovY and fovX（译为“水平可视角度”） can always be derived from each other.
 
-注意，此时相机应已在标准位置（位于原点，朝向$-\hat{z}$，向上方向为$\hat{y}$），因此我们可 convert fovY and aspect ratio to $l,r,b,t$ (left, right, bottom, top) of the near clip plane:
+注意，此时相机应已在标准位置（位于原点，朝向$-\hat{z}$，向上方向为$\hat{y}$），因此我们可 convert fovY and aspect ratio to $\text{left}, \text{right}, \text{bottom}, \text{top} of the near clip plane:
 
 $$
 \tan{\frac{\text{fovY}}{2}=\frac{\text{top}}{|\text{near}|}}
