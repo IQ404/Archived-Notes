@@ -6,6 +6,11 @@
 - [Linear Algebra](#la)
 - [Transformation](#transformation)
 - [Rasterization](#rasterization)
+- [Shading](#shading)
+- [Geometry]()
+- [Ray Tracing](#raytracing)
+
+- [Animation](#animation)
 
 ---
 
@@ -704,7 +709,7 @@ $$
 
 <ins>Note</ins>: given aspect ratio, fovY and fovX（译为“水平可视角度”） can always be derived from each other.
 
-注意，此时相机应已在标准位置（位于原点，朝向$-\hat{z}$，向上方向为$\hat{y}$），因此我们可 convert fovY and aspect ratio to $\text{left}, \text{right}, \text{bottom}, \text{top}$ of the near clip plane:
+注意，此时相机应已在标准位置（位于原点，朝向 $-\hat{z}$，向上方向为 $\hat{y}$），因此我们可 convert fovY and aspect ratio to $\text{left}, \text{right}, \text{bottom}, \text{top}$ of the near clip plane:
 
 $$
 \tan{\frac{\text{fovY}}{2}=\frac{\text{top}}{|\text{near}|}}
@@ -722,7 +727,7 @@ $$
 \text{left}=-\text{right}
 $$
 
-📜 屏幕是一个 $2$ 维数组，该数组中的每一个元素为一个像素（pixel）。屏幕的大小称为分辨率（resolution），例如 $1920*1080$。
+📜 屏幕是一个<ins>二维</ins>数组，该数组中的每一个元素为一个像素（pixel）。屏幕的大小称为分辨率（resolution），例如 $1920*1080$。
 
 📜 A <ins>simplified</ins> definition of pixel:
 
@@ -734,9 +739,35 @@ There are mainly two ways to define the color in a pixel:
 - Mixing from red, green and blue, each represented by a number.
 - 256 levels each represents a color where 0 is black and 255 is white.
 
+📜 显示器上显示的信息是被存放在显卡的内存（显存）上的。
+
+❓ 详细分析DAC（Digital to Analog Convertors）的原理。
+
 📜 屏幕是一个典型的光栅成像设备（raster display）。
 
 Raster在德语中为 screen 的意思。Rasterize 意为 drawing onto the screen。
+
+❓ CRT（Cathode Ray Tube）如何控制电子打在屏幕上某点的颜色？
+
+❓ 详细分析 隔行扫描 产生画面撕裂的原因。
+
+- LED（Light Emitting Diode）
+
+❓ LED发出不同颜色的光的原理。
+
+- LCD（Liquid Crystal Display）
+
+液晶的不同排布会影响光的极化（偏振方向），以此我们可以控制偏振光（由backlight（通常为LED）产生的光通过一Polarizer而产生）是否可以（如果可以，光栅与偏振的角度可控制亮度？）通过另一Polarizer显示在屏幕像素上。
+
+❓ 如何定义视网膜的分辨率？
+
+- Electrophoretic (Electronic Ink) Display
+
+亚马逊的kindle电纸书就是用的该原理。
+
+这种屏幕上每个像素中都有电负性相反的黑/白色分子。该种设备通过调整每个像素上的电压来对黑/白色分子进行翻转。
+
+- ❓ 什么是OLED？
 
 📜 Defining the screen space: $(0,0)$ on the bottom left, $y$-axis upwards, $x$ towards right.
 
@@ -762,5 +793,16 @@ M_{\text{viewport}}=
 0 & 0 & 0 & 1
 \end{pmatrix}
 $$
+
+📜 Why using triangle as fundamental shape primitives:
+
+- It is the most basic polygon. All the other polygons can be broken down to triangles.
+- The interior of triangle is guaranteed to be <ins>planar</ins>.
+- Easy to determine whether a point is inside a triangle or not (by cross products).
+- Well-defined method for interpolating values at vertices over triangle (barycentric interpolation).
+
+
+
+
 
 ---
