@@ -632,6 +632,8 @@ $$
 
 - 定义 Canonical cube：$[-1,1]^3$
 
+- 有时我们称 Canonical cube 中的坐标为<ins>正则化空间坐标（canonical space coordinate）</ins>。
+
 📜 Orthographic projection（正交投影）
 
 给定空间中的一个长方体（i.e. 想要显示的区域），其表示为 far, near, left, right, bottom, top 六个数字。
