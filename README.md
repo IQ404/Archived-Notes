@@ -11,6 +11,8 @@ The contents in those notes are written by myself but they are <ins>by no means<
 
 In progress:
 
+- [C++]()
+
 - [Computer Graphics](CG.md)
 
   This is mostly based on [GAMES101](https://sites.cs.ucsb.edu/~lingqi/teaching/games101.html) by [Lingqi Yan](https://sites.cs.ucsb.edu/~lingqi/).
