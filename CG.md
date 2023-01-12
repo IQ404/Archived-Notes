@@ -849,6 +849,12 @@ When we do the sampling for the rasterization, we only need to loop within the A
 
 - ❓ 搞懂光栅化的另一种加速方法：Incremental Triangle Traversal
 
+## Antialiasing（反走样/抗锯齿）
+
+📜 
+
+## Z-Buffering（深度缓冲）
+
 📜 
 
 
