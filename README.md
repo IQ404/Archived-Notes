@@ -30,6 +30,8 @@ In progress:
   This is mostly based on [GAMES201](http://games-cn.org/games201/).
 
 - [Unreal Engine](UE.md)
+  
+  This is mostly based on Tom Looman's [Unreal C++ Course](https://courses.tomlooman.com/p/unrealengine-cpp?coupon_code=COMMUNITY15).
 
 ---
 
