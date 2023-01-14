@@ -923,9 +923,21 @@ This refers to any errors/mistakes/inaccuracies in computer graphics（一切图
 
 注：目前很多图像处理都采取机器学习的方法。
 
-信号处理（signal processing）
+📜 Convolution（卷积）
 
-📜 
+- A simplified definition: point-wise local (weighted) averaging in a "sliding window".
+
+Such "sliding window" is called a filter（滤波器）。
+
+❓ what if the evaluated point is in a place such that the filter goes outside the signal?
+
+❓ How to specifically represent a filter in frequency domain?
+
+📜 Convolution Theorem
+
+Convolution in the spatial domain is equal to multiplication in the frequency domain, and <ins>vice versa</ins>.
+
+
 
 
 
