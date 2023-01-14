@@ -851,13 +851,88 @@ When we do the sampling for the rasterization, we only need to loop within the A
 
 ## Antialiasing（反走样/抗锯齿）
 
+📜 More about sampling:
+
+- Photograph is a sampling (for each pixel) done on the plane containing the information gathered by the image sensor (e.g. from a camera).
+
+- video is a sampling (for each frame) in time.
+
+📜 Definition: Sampling <ins>Artifacts</ins>
+
+This refers to any errors/mistakes/inaccuracies in computer graphics（一切图形学生成的“看上去不太对”的东西）.
+
+例如：
+
+- 采样后形成的锯齿（Jaggies, also called Staircase Pattern）。
+
+- 摩尔纹（Moire Patterns）
+
+  例如用手机拍电脑显示器后常得到的扭曲条纹。
+  
+  给定一幅（相对清晰的）图片，将其奇数行与奇数列上的像素全部拿掉，后再对在一块形成一张小的图，再将此小图放大至原图大小，则会产生摩尔纹。
+  
+  ❓ 理解摩尔纹具体产生原因。
+
+- Wagon Wheel illusion (False Motion)
+
+  例如高速转动的车轮产生的运动伪影。
+  
+  ❓ 理解运动伪影产生的具体原因。
+
+📜 Behind the aliasing artifacts: signals are changing too fast (high frequency), but sampled too slowly.
+
+❓ 深入理解这句话。
+
+📜 The main idea of antialiasing: Blurring (Pre-Filtering) before Sampling.
+
+❓ 深入理解为什么先采样后模糊<ins>不能</ins>达到反走样。
+
+- 先采样后模糊的学名叫做 Blurred Aliasing.
+
+📜 傅里叶级数展开：任何一个周期函数都可以被写成/近似为一个常数项加上一系列$\sin$与$\cos$函数的线性组合。
+
+- 任何一个（周期）函数通过傅里叶级数展开都可分解为不同频率。
+
+📜 傅里叶变换可以将 Spatial Domain（时域）上的函数变成其 Frequency Domain（频域）上的对应函数（频谱）；逆傅里叶变换可以将 Frequency Domain（频域）上的函数变成其 Spatial Domain（时域）上的对应函数。
+
+- 频谱可以让我们看到一个时域上的信号（e.g. 图像）在各个不同频率上都长什么样。
+
+❓ 时域上的信号（e.g. 图像）是如何表示成一个函数的？
+
+❓ 深入理解何为频域，以及傅里叶变换（and thus 频谱）/逆傅里叶变换。
+
+❓ 傅里叶级数与傅里叶变换是否可以作用在非周期性函数上？如果可以，与处理周期性函数有何区别？
+
+📜 Formal definition of Aliases: Two different frequencies that are indistinguishable at a given sampling rate are called "aliases".
+
+❓ 深入理解这个定义。
+
+📜 Filtering: getting rid of certain frequency contents.
+
+- 如果我们把频谱上的低频信息全部去掉后对频谱做逆傅里叶变换，我们将得到原图的edges（注：边界处信号发生剧烈变化）。
+  
+  这种操作叫做高通滤波（High-pass filter）。
+  
+- 如果我们把频谱上的高频信息全部去掉后对频谱做逆傅里叶变换，我们将得到原图模糊后的图像。
+
+  这种操作叫做低通滤波（Low-pass filter）。
+
+❓ 深入理解以上两点。
+
+注：数字图像处理（非机器学习）为相关领域。
+
+注：目前很多图像处理都采取机器学习的方法。
+
+信号处理（signal processing）
+
 📜 
 
-数字图像处理（非机器学习）
 
-❓ 频域和频谱的区别。
+
 
 ## Z-Buffering（深度缓冲）
+
+This is a way to represent visibility/occlusion（遮挡）
 
 📜 
 
