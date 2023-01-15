@@ -851,6 +851,11 @@ When we do the sampling for the rasterization, we only need to loop within the A
 
 ## Antialiasing（反走样/抗锯齿）
 
+<ins>NOTE</ins>: my current understandings on this topic are really bad. Reference for further reading can be
+
+- Signal processing
+- 
+
 📜 More about sampling:
 
 - Photograph is a sampling (for each pixel) done on the plane containing the information gathered by the image sensor (e.g. from a camera).
@@ -927,20 +932,63 @@ This refers to any errors/mistakes/inaccuracies in computer graphics（一切图
 
 - A simplified definition: point-wise local (weighted) averaging in a "sliding window".
 
-Such "sliding window" is called a filter（滤波器）。
+Such "sliding window" is called a filter（滤波器/卷积核）。
 
 ❓ what if the evaluated point is in a place such that the filter goes outside the signal?
 
 📜 Convolution Theorem
 
-- Convolution in the spatial domain is equal to multiplication in the frequency domain, and <ins>vice versa</ins>.
+- Convolution in the spatial domain is equal to multiplication in the frequency domain; convolution in the frequency domain is equal to multiplication in the spatial domain.
 
-❓ How to specifically represent a filter in spatial/frequency domain?
+❓ How to specifically represent a filter in spatial/frequency domain? (understand the pattern)
 
+📜 若滤波器中各处weighting都一样，则对图像（时域）做卷积相当于对图像做blurring（i.e. 此时滤波器相当于一低通滤波器）。
 
+并且滤波器覆盖面积越大，效果越模糊。
 
+- 特殊情况：当卷积核大小为 $n \times n$ 像素时，我们若只考虑像素中心位置（i.e. 与显示器采样一致），则（对于已光栅化的图像）每一像素点的卷积结果为 以该点为中心该卷积核覆盖的所有像素的平均值。
 
+❓ Understand why the color of the resulting pixel will be brighter if we just add up the values of the pixels covered by the box filter without averaging the sum.
 
+📜 我们可以采样理解为：把一个时域上的连续函数（e.g. 图像信号）与冲激函数相乘所得到的函数。
+
+❓ 上述所得函数与采样后复原出来的图像所对应的时/频域上的函数有什么区别？
+
+通过Convolution Theorem我们可以发现，该resulting function在频域上的频谱相当于在频域上复制粘贴了很多份原函数的频谱。
+
+并且采样率越高，这些原频谱复制粘贴的间隔就越大。
+
+- 我们可以把走样理解为：复制粘贴频谱相重叠的现象。
+
+📜 频率分析角度下的反走样：首先对原信号做低通滤波器卷积，相当于去掉了频谱上高频的部分。这时再做采样（i.e. 复制频谱）便不会出现粘贴频谱间的重叠。
+
+❓ 这样的做法可以确保让我们采样后得到的图像<ins>相对原信号卷积结果</ins>不产生走样，但它是如何确保该采样结果<ins>相对原信号</ins>不产生走样的呢？
+
+📜 对于一个要被显示在屏幕上的图像信号，我们可以设卷积核与屏幕上的单位像素大小相同。则做卷积时，我们只需将每个像素中的信息求平均（因为最终整个卷积核覆盖的区域内只会显示该区域中心点的信息）。这样，我们便直接得到了卷积（模糊）后的信号的光栅化。遂完成反走样。
+
+<br>
+
+📜 上述过程中我们需要对每个像素内的信息求平均。In practice, we can implement (approximate) this as follows:
+
+- Antialiasing by supersampling (MSAA, multisample anti-aliasing)
+
+  在每个像素内部平均分配 $n \times n$ 个点，对这些点进行采样后求平均，将该平均值作为此像素内信息的平均值。
+  
+  ❓ 在工业界，MSAA中supersampling采样点的分布其实并不是平均的，而是以某种pattern分布的。同时，一些点会被相邻的像素复用。这样可以用更少的点（and thus 更少的计算量）达到相同的效果。深入理解这些pattern以及复用点的原理。
+
+- FXAA（Fast Approximate AA）
+
+  先直接采样，得到有锯齿的图像，然后在图像层面做后期处理：通过图像匹配的方法把图像中的边界找到，最后将这些边界换成没有锯齿的边界。
+
+- TAA（Temporal AA）
+
+  类似将MSAA中supersampling的点分布在时间上，使得current frame可以复用previous frame的信息。
+
+📜 Super resolution（超分辨率）
+
+将低分辨率图像变成高分辨率图像的技术。涉及猜测。
+
+- DLSS（Deep Learning Super Sampling）为典型的超分辨率技术。
 
 ## Z-Buffering（深度缓冲）
 
