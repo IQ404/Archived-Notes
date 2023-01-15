@@ -986,7 +986,7 @@ Such "sliding window" is called a filter（滤波器/卷积核）。
 
 📜 Super resolution（超分辨率）
 
-将低分辨率图像变成高分辨率图像的技术。涉及猜测。
+将低分辨率图像变成高分辨率图像的技术。涉及猜测（补像素）。
 
 - DLSS（Deep Learning Super Sampling）为典型的超分辨率技术。
 
