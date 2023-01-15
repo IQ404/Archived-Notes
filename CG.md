@@ -854,7 +854,8 @@ When we do the sampling for the rasterization, we only need to loop within the A
 <ins>NOTE</ins>: my current understandings on this topic are really bad. Reference for further reading can be
 
 - Signal processing
-- 
+- *Fundamentals of Computer Graphics*, Chapter "The Graphics Pipeline" and "Signal Processing"
+- *GAMES101*, Lecture 6: Rasterization 2 (Antialiasing and Z-Burffering)
 
 📜 More about sampling:
 
