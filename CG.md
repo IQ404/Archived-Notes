@@ -995,11 +995,17 @@ Such "sliding window" is called a filter（滤波器/卷积核）。
 
 - DLSS（Deep Learning Super Sampling）为典型的超分辨率技术。
 
-## Z-Buffering（深度缓冲）
+## Z-Buffering（also called Depth-Buffer, 深度缓存，深度缓冲）
 
-This is a way to represent visibility/occlusion（遮挡）
+This is a way to represent visibility/occlusion（遮挡）.
 
-📜 
+<ins>NOTE</ins>: Z-buffer canNOT represent transparent objects!
+
+- Let the Z values in Z-buffer be the absolute distance from the camera to a point (and thus the Z values in Z-buffer are all positive where larger means further away from the camera).
+
+📜 Painter's Algorithm
+
+(Inspired by how painters paint) Paint from back to front, <ins>overwrite</ins> in the framebuffer.
 
 
 
