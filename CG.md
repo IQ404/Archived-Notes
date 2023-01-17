@@ -1045,9 +1045,8 @@ for (each triangle T)
 
 ❓ When we combine MSAA and z-buffer, we need to buffering the Z values for multiple sampling points in each pixel. How is this combination done (in particular, when there are 4 sampling points in a pixel, two on the left and two on the right, where the left two on triangle A occlude the left two on triangle B and the right two on triangle B occlude the right two on triangle A)?
 
-📜 
-
 ---
 
 # Shading<a name="shading"></a>
 
+📜 
