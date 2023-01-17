@@ -999,13 +999,20 @@ Such "sliding window" is called a filter（滤波器/卷积核）。
 
 This is a way to represent visibility（可见性）/occlusion（遮挡）.
 
+📜 Painter's Algorithm (Inspired by how oil painters paint)
+
+Paint from back to front, <ins>overwrite</ins> in the framebuffer.
+
+- Requires sorting in depth, thus has complexity of $O(n\log{n})$. (❓ understand complexity)
+- Can have unresolvable depth order!!!
+
+📜 
+
 <ins>NOTE</ins>: Z-buffer canNOT represent transparent objects!
 
 - Let the Z values in Z-buffer be the absolute distance from the camera to a point (and thus the Z values in Z-buffer are all positive where larger means further away from the camera).
 
-📜 Painter's Algorithm
 
-(Inspired by how painters paint) Paint from back to front, <ins>overwrite</ins> in the framebuffer.
 
 📜 
 
