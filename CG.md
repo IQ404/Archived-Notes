@@ -1006,11 +1006,33 @@ Paint from back to front, <ins>overwrite</ins> in the framebuffer.
 - Requires sorting in depth, thus has complexity of $O(n\log{n})$. (❓ understand complexity)
 - Can have unresolvable depth order!!!
 
-📜 
+📜 Z-Buffer algorithm
+
+To get around with the Painter's algorithm, we create an additional buffer to store depth values. So now in the program we have two buffers:
+
+- frame buffer stores color value for every pixel (or sample)
+- depth bufer (i.e. z-buffer) stores depth values for every pixel (or sample)
+
+这两个缓存是同时生产的。
 
 <ins>NOTE</ins>: Z-buffer canNOT represent transparent objects!
 
-- Let the Z values in Z-buffer be the absolute distance from the camera to a point (and thus the Z values in Z-buffer are all positive where larger means further away from the camera).
+- For simplicity, let the Z values in Z-buffer be the absolute distance from the camera to a point (and thus the Z values in Z-buffer are all positive where larger means further away from the camera).
+
+Pseudo-code for the Z-Buffer algorithm:
+
+```cpp
+// Initialize depth buffer to "infinity"
+
+// During rasterization:
+for (each triangle T)
+    for (each sample (x,y,z) in T)
+        if (z < zbuffer[x,y])        // closest sample so far
+            framebuffer[x,y] = rhb;  // update color
+            zbuffer[x,y] = z;        // update depth
+        else
+            ;    // do nothing, this sample is occluded
+```
 
 
 
