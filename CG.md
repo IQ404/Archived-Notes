@@ -1003,7 +1003,7 @@ This is a way to represent visibility（可见性）/occlusion（遮挡）.
 
 Paint from back to front, <ins>overwrite</ins> in the framebuffer.
 
-- Requires sorting in depth, thus has complexity of $O(n\log{n})$. (❓ understand complexity)
+- Requires sorting in depth, thus has time complexity of $O(n\log{n})$. (❓ understand time complexity)
 - Can have unresolvable depth order!!!
 
 📜 Z-Buffer algorithm
@@ -1015,26 +1015,35 @@ To get around with the Painter's algorithm, we create an additional buffer to st
 
 这两个缓存是同时生产的。
 
-<ins>NOTE</ins>: Z-buffer canNOT represent transparent objects!
-
 - For simplicity, let the Z values in Z-buffer be the absolute distance from the camera to a point (and thus the Z values in Z-buffer are all positive where larger means further away from the camera).
 
 Pseudo-code for the Z-Buffer algorithm:
 
-```cpp
+```
 // Initialize depth buffer to "infinity"
 
 // During rasterization:
 for (each triangle T)
     for (each sample (x,y,z) in T)
         if (z < zbuffer[x,y])        // closest sample so far
-            framebuffer[x,y] = rhb;  // update color
+            framebuffer[x,y] = rgb;  // update color
             zbuffer[x,y] = z;        // update depth
         else
             ;    // do nothing, this sample is occluded
 ```
 
+<ins>NOTE</ins>:
 
+- If we assume there are no two floating points (of which we use to store values in buffers) that holds the same value, then the order we draw triangles won't matter.
+- Z-buffer canNOT represent transparent objects!
+
+❓ 学会使用C++中对infinity的表示。
+
+❓ Understand why, if assume constant coverage of samples for every triangle, the time complexity of the z-buffer algorithm is $O(n)$ where there are totally $n$ triangles. (Note that z-buffer algorithm is not sorting)
+
+❓ Z-buffer algorithm is implemented in hardware for all GPUs, how?
+
+❓ When we combine MSAA and z-buffer, we need to buffering the Z values for multiple sampling points in each pixel. How is this combination done (in particular, when there are 4 sampling points in a pixel, two on the left and two on the right, where the left two on triangle A occlude the left two on triangle B and the right two on triangle B occlude the right two on triangle A)?
 
 📜 
 
