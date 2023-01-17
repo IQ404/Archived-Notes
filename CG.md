@@ -997,7 +997,7 @@ Such "sliding window" is called a filter（滤波器/卷积核）。
 
 ## Z-Buffering（also called Depth-Buffer, 深度缓存，深度缓冲）
 
-This is a way to represent visibility/occlusion（遮挡）.
+This is a way to represent visibility（可见性）/occlusion（遮挡）.
 
 <ins>NOTE</ins>: Z-buffer canNOT represent transparent objects!
 
@@ -1007,6 +1007,9 @@ This is a way to represent visibility/occlusion（遮挡）.
 
 (Inspired by how painters paint) Paint from back to front, <ins>overwrite</ins> in the framebuffer.
 
-
+📜 
 
 ---
+
+# Shading<a name="shading"></a>
+
