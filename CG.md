@@ -1049,4 +1049,41 @@ for (each triangle T)
 
 # Shading<a name="shading"></a>
 
-📜 
+Shading 译为“着色”。
+
+- Definition: The process of <ins>applying a material</ins> to an object.
+
+## Blinn-Phong Reflectance Model
+
+This is a simple shading model.
+
+Assume there is a light source and some object in an environment. There will be 3 kinds of light received by the camera:
+
+- Specular highlights（高光）
+  
+  The light emitted from the light source that is reflected directly by the object before received by the camera.
+  
+  ❓ 为什么一个点光源产生的高光不是一个点而是一片区域？
+  
+- Diffuse reflection（漫反射）
+  
+  The light emitted from the light source that is absorbed and then re-emitted in all direction by the object before received by the camera.
+  
+- Ambient lighting（环境光照）
+
+  The light emitted from the light source that bounce around the environment before received by the camera.
+  
+  Assumption: ambient lighting is constant everywhere.
+
+📜 We compute light reflected toward camera at a specific <ins>shading point</ins>.
+
+We assume the shading point is on the surface of the object, and there is always a small flat plane local to the shading point.
+
+Define some directions by the following <ins>unit</ins> vectors:
+
+- $\hat{v}$, Viewer direction: pointing from the shading point to the camera.
+- $\hat{l}$, Light direction: pointing from the shading point to the light source.
+- $\hat{n}$, Surfacec normal: pointing from the shading point to the direction normal to the small flat plane local to the shading point.
+
+
+
