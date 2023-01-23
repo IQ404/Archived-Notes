@@ -1085,5 +1085,12 @@ Define some directions by the following <ins>unit</ins> vectors:
 - $\hat{l}$, Light direction: pointing from the shading point to the light source.
 - $\hat{n}$, Surfacec normal: pointing from the shading point to the direction normal to the small flat plane local to the shading point.
 
+We also need to define:
+
+- Surface parameters（shading point处物体的属性）: color, shininess, etc.
+
+<ins>NOTE</ins>: shading is local, we only consider one shading point at a time, it does not take other objects in the environment into consideration. Thus, shading will NOT produce shadow!
+
+
 
 
