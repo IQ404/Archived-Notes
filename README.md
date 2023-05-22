@@ -9,4 +9,4 @@ The contents in those notes are written by myself but they are <ins>by no means<
 
 ## List of my notes:
 
-- [Ray Tracing]()
+- [Ray Tracing](https://github.com/IQ404/Notes/tree/ray_tracing)
